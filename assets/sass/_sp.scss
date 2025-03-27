@@ -1,0 +1,524 @@
+.pc {
+	display: none;
+}
+.sp {
+	display: block;
+}
+
+/*-----------------------------------------------------*/
+// header
+/*-----------------------------------------------------*/
+
+.header {
+	height: 50px;
+	padding-right: 0;
+
+	.logo {
+		width: 100%;
+	}
+
+	.btn {
+		display: none;
+	}
+}
+
+/*-----------------------------------------------------*/
+// popup
+/*-----------------------------------------------------*/
+
+.popup {
+	display: none;
+
+	.popup__inner {
+		width: 100%;
+		height: 100%;
+		@include myClampSpaceSp("padding", 80);
+
+		.popup__bg {
+			width: 100%;
+			height: 100%;
+		}
+	}
+	.box {
+		@include myClampSpaceSp("width", 1040);
+		filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.25));
+
+		.box__head {
+			h2 {
+				@include fsClampSp(24);
+				padding: 5px 0;
+			}
+
+			.popup__close {
+				top: -1px;
+				right: 10px;
+				width: 50px;
+			}
+		}
+		.box__body {
+			ul {
+				li {
+					margin-bottom: 1px;
+				}
+			}
+		}
+	}
+}
+#popup__entry {
+	.box {
+		.box__head {
+			h2 {
+				background: url(../images/icon_entry.svg) no-repeat 25px center;
+				background-size: 26px;
+			}
+		}
+		.box__body {
+			ul {
+				li {
+					&:nth-child(1) {
+						width: calc(50% - 0.5px);
+					}
+					&:nth-child(2) {
+						width: calc(50% - 0.5px);
+					}
+					&:nth-child(3) {
+						width: 100%;
+					}
+					&:nth-child(4) {
+						width: calc(50% - 0.5px);
+					}
+					&:nth-child(5) {
+						width: calc(50% - 0.5px);
+					}
+					&:nth-child(6) {
+						width: 100%;
+						margin-bottom: 0;
+					}
+				}
+			}
+		}
+	}
+}
+#popup__mypage {
+	.box {
+		.box__head {
+			h2 {
+				background: url(../images/icon_entry.svg) no-repeat 25px center;
+				background-size: 26px;
+			}
+		}
+		.box__body {
+			ul {
+				li {
+					&:nth-child(1) {
+						width: calc(50% - 0.5px);
+					}
+					&:nth-child(2) {
+						width: calc(50% - 0.5px);
+					}
+				}
+			}
+		}
+	}
+}
+
+/*-----------------------------------------------------*/
+// nav
+/*-----------------------------------------------------*/
+
+.nav {
+	display: none;
+	background: linear-gradient(0deg, #76c5ab 0%, #27b9ed 100%);
+
+	.logo {
+		@include myClampSpaceSp("width", 529);
+	}
+
+	.box {
+		.list {
+			@include myClampSpaceSp("margin-bottom", 70);
+			> ul {
+				> li {
+					@include myClampSpaceSp("width", 220);
+
+					> a {
+						dl {
+							@include myClampSpaceSp("margin-bottom", 20);
+							dt {
+								@include myClampSpaceSp("width", 70);
+								@include myClampSpaceSp("margin-bottom", 15);
+							}
+							dd {
+								@include fsClampSp(32);
+							}
+						}
+					}
+
+					> ul {
+						> li {
+							@include myClampSpaceSp("margin-bottom", 7);
+							> a {
+								@include fsClampSp(15);
+							}
+						}
+					}
+				}
+			}
+		}
+
+		.btn {
+			ul {
+				li {
+					margin: 0 10px;
+
+					button {
+						@include fsClampSp(19);
+						padding: 15px 30px 15px 60px;
+					}
+
+					&:nth-child(1) {
+						button {
+							background: url(../images/icon_mypage_w.svg) no-repeat 20px center rgba(#fff, 0.7);
+							background-size: 29px;
+						}
+					}
+					&:nth-child(2) {
+						button {
+							background: url(../images/icon_entry_w.svg) no-repeat 20px center rgba(#fff, 0.7);
+							background-size: 29px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+/*-----------------------------------------------------*/
+// main
+/*-----------------------------------------------------*/
+
+.main {
+	overflow: hidden;
+	padding-top: 50px;
+}
+
+/*-----------------------------------------------------*/
+// home
+/*-----------------------------------------------------*/
+
+.home {
+	h2 {
+		@include myClampSpaceSp("margin-bottom", 15);
+
+		span {
+			@include fsClampSp(14);
+			padding: 4px 20px 5px 20px;
+		}
+	}
+
+	.lead {
+		@include fsClampSp(24);
+		letter-spacing: 0.12em;
+		@include myClampSpaceSp("margin-bottom", 20);
+	}
+
+	.more {
+		a {
+			@include fsClampSp(13);
+		}
+	}
+
+	.visual {
+		.wrap {
+			.l {
+				width: 100%;
+			}
+			.r {
+				width: 100%;
+				display: flex;
+				justify-content: space-between;
+
+				.r__1,
+				.r__2 {
+					width: 50%;
+				}
+			}
+		}
+
+		.catch {
+			@include myClampSpaceSp("width", 230);
+		}
+	}
+
+	.concept {
+		@include myClampSpaceSp("padding-top", 30);
+		@include myClampSpaceSp("padding-bottom", 80);
+		@include myClampSpaceSp("padding-left", 20);
+		@include myClampSpaceSp("padding-right", 20);
+		background: url(../images/concept_bg.webp) no-repeat bottom center;
+		background-size: 250%;
+
+		.inner {
+			max-width: 690px;
+		}
+
+		h2 {
+			@include fsClampSp(20);
+			line-height: 1.8;
+			letter-spacing: 0.05em;
+			@include myClampSpaceSp("margin-bottom", 30);
+		}
+
+		p {
+			@include fsClampSp(14);
+			line-height: 2;
+			@include myClampSpaceSp("margin-bottom", 20);
+		}
+	}
+
+	.index {
+		@include myClampSpaceSp("padding-top", 75);
+		@include myClampSpaceSp("padding-bottom", 30);
+		@include myClampSpaceSp("padding-left", 20);
+		@include myClampSpaceSp("padding-right", 20);
+
+		.first {
+			@include myClampSpaceSp("padding-bottom", 50);
+
+			.box {
+				width: 100%;
+				@include myClampSpaceSp("margin-bottom", 30);
+
+				p {
+					@include fsClampSp(14);
+					@include myClampSpaceSp("padding-bottom", 20);
+				}
+
+				.img {
+					@include myClampSpaceSp("padding-bottom", 20);
+				}
+			}
+			.box__2 {
+				p {
+					@include myClampSpaceSp("padding-bottom", 20);
+				}
+			}
+		}
+
+		.second {
+			.box {
+				.list {
+					margin-top: 0;
+					@include myClampSpaceSp("padding-top", 40);
+
+					ul {
+						li {
+							@include myClampSpaceSp("margin-bottom", 30);
+
+							&:nth-child(1) {
+								width: 100%;
+							}
+							&:nth-child(2) {
+								width: 100%;
+								padding-top: 0;
+							}
+							&:nth-child(3) {
+								width: 100%;
+							}
+
+							.img {
+								width: 85%;
+								margin-left: auto;
+								margin-right: auto;
+								@include myClampSpaceSp("margin-bottom", 20);
+							}
+
+							.txt {
+								@include fsClampSp(20);
+								padding: 0;
+								@include myClampSpaceSp("margin-bottom", 5);
+							}
+
+							.name {
+								padding: 0;
+								dl {
+									dt {
+										@include fsClampSp(40);
+										@include myClampSpaceSp("margin-right", 10);
+									}
+									dd {
+										@include fsClampSp(14);
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.system {
+		background: url(../images/home_system_bg.webp) no-repeat center center;
+		background-size: cover;
+		@include myClampSpaceSp("padding-top", 20);
+		@include myClampSpaceSp("padding-bottom", 30);
+		@include myClampSpaceSp("padding-left", 30);
+		@include myClampSpaceSp("padding-right", 30);
+
+		.lead {
+			@include myClampSpaceSp("margin-bottom", 5);
+		}
+
+		.more {
+			padding-left: 0;
+		}
+	}
+
+	.recruit {
+		margin-bottom: 0;
+		@include myClampSpaceSp("padding-top", 60);
+		@include myClampSpaceSp("padding-left", 20);
+		@include myClampSpaceSp("padding-right", 20);
+
+		.more {
+			margin-bottom: 0;
+		}
+
+		.btns {
+			display: none;
+		}
+	}
+}
+
+/*-----------------------------------------------------*/
+// footer
+/*-----------------------------------------------------*/
+
+.footer {
+	@include myClampSpaceSp("padding-top", 70);
+	@include myClampSpaceSp("padding-bottom", 120);
+	@include myClampSpaceSp("padding-left", 20);
+	@include myClampSpaceSp("padding-right", 20);
+
+	.head {
+		@include myClampSpaceSp("margin-bottom", 30);
+
+		a {
+			width: 100%;
+		}
+	}
+
+	.fnav {
+		@include myClampSpaceSp("margin-bottom", 30);
+
+		.box {
+			width: 100%;
+			padding-right: 40%;
+			@include myClampSpaceSp("margin-bottom", 20);
+
+			h3 {
+				@include myClampSpaceSp("padding-bottom", 5);
+				@include myClampSpaceSp("margin-bottom", 10);
+
+				a {
+					@include fsClampSp(14);
+				}
+			}
+
+			ul {
+				li {
+					@include myClampSpaceSp("margin-right", 15);
+					@include myClampSpaceSp("margin-bottom", 5);
+
+					a {
+						@include fsClampSp(14);
+					}
+				}
+			}
+		}
+	}
+
+	.entries {
+		display: none;
+	}
+
+	.mypage {
+		display: none;
+	}
+
+	.btns {
+		@include myClampSpaceSp("margin-bottom", 15);
+
+		ul {
+			li {
+				@include myClampSpaceSp("margin-left", 5);
+				@include myClampSpaceSp("margin-right", 5);
+
+				a {
+					@include fsClampSp(11);
+					background: url(../images/icon_link.svg) no-repeat right center;
+					background-size: 12px;
+					padding-right: 15px;
+				}
+			}
+		}
+	}
+
+	.copy {
+		@include fsClampSp(10);
+	}
+}
+
+/*-----------------------------------------------------*/
+// menubar
+/*-----------------------------------------------------*/
+
+.menubar {
+	top: 0;
+	right: 10px;
+	width: 50px;
+	height: 50px;
+	margin-left: 0;
+
+	.menubar__trigger {
+		width: 50px;
+		height: 50px;
+
+		span:nth-of-type(1) {
+			top: 16px;
+		}
+		span:nth-of-type(2) {
+			top: 25px;
+		}
+		span:nth-of-type(3) {
+			top: 34px;
+		}
+	}
+}
+
+/*-----------------------------------------------------*/
+// fbtn
+/*-----------------------------------------------------*/
+
+.fbtn {
+	display: block;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	z-index: 1000;
+
+	button {
+		appearance: none;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		-o-appearance: none;
+		border: none;
+		cursor: pointer;
+		transition: 0.3s;
+		background: none;
+		vertical-align: bottom;
+	}
+}

@@ -1,0 +1,141 @@
+// font
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Noto+Serif+JP:wght@200..900&family=Oswald:wght@200..700&display=swap");
+
+$font: "Noto Sans JP", sans-serif;
+$font-serif: "Noto Serif JP", serif;
+$font-oswald: "Oswald", sans-serif;
+
+// font size for PC
+// 最大フォントサイズ($max)を基準に、指定のビューポート範囲内でフォントサイズを変化させる
+// $min: 最小フォントサイズ (省略時は最大値の70%)
+// $min-view-port: 最小ビューポート幅 (デフォルト: 768px)
+// $max-view-port: 最大ビューポート幅 (デフォルト: 1100px)
+// @include fsClamp(18, $max-view-port: 1300);
+@mixin fsClamp($max, $min: null, $min-view-port: 768, $max-view-port: 1200) {
+	// $minが指定されていない場合、デフォルト値として$maxの70%を設定
+	@if $min == null {
+		$min: $max * 0.7;
+	}
+
+	// ビューポートに対するフォントサイズの変化率を計算
+	$variable-part: ($max - $min) / ($max-view-port - $min-view-port);
+
+	// 計算式の定数部分 (ビューポート幅によらない部分)
+	$constant: ($max - $max-view-port * $variable-part) / 16;
+
+	// 最小・最大フォントサイズをREM単位で計算
+	$min-rem: $min / 16 * 1rem;
+	$max-rem: $max / 16 * 1rem;
+
+	// 可変部分のREMとVW単位を計算
+	$variable-vw: 100 * $variable-part * 1vw;
+
+	// clampを使ってフォントサイズを動的に設定
+	font-size: clamp($min-rem, calc(#{$constant}rem + #{$variable-vw}), $max-rem);
+}
+
+// font size for SP
+// @include fsClampSp(16);
+@mixin fsClampSp(
+	$base-size,
+	$min: null,
+	$min-view-port: 300,
+	$max-view-port: 768,
+	$base-view-port: 390
+) {
+	@if $min == null {
+		$min: $base-size * ($min-view-port / $base-view-port); // 最小値を計算
+	}
+
+	// 390px時のフォントサイズを基準に計算
+	$max: $base-size * ($max-view-port / $base-view-port);
+
+	// 可変部分の計算
+	$variable-part: ($max - $min) / ($max-view-port - $min-view-port);
+	$constant: ($min - $min-view-port * $variable-part) / 16;
+
+	// フォントサイズをREM単位で設定
+	$min-rem: $min / 16 * 1rem;
+	$max-rem: $max / 16 * 1rem;
+	$variable-vw: 100 * $variable-part * 1vw;
+
+	font-size: clamp($min-rem, calc(#{$constant}rem + #{$variable-vw}), $max-rem);
+}
+
+// @include myClampSpace(margin-top, 30); // margin-top: 1rem ~ 30px の範囲で可変
+// @include myClampSpace(padding-bottom, 50, 20); // padding-bottom: 20px ~ 50px の範囲で可変
+@mixin myClampSpace($property, $max, $min: null, $min-view-port: 768, $max-view-port: 1200) {
+	// $min が指定されていない場合、$max の70%をデフォルト値として設定
+	@if $min == null {
+		$min: $max * 0.7; // 70% をデフォルトとする
+	}
+
+	// 1vwあたりの増加量を計算
+	$variable-part: ($max - $min) / ($max-view-port - $min-view-port);
+
+	// 定数部分を計算
+	$constant: ($max - $max-view-port * $variable-part) / 16;
+
+	// 最小値と最大値をREM単位に変換
+	$min-rem: $min / 16 * 1rem;
+	$max-rem: $max / 16 * 1rem;
+
+	// 可変部分をVW単位で計算
+	$variable-vw: 100 * $variable-part * 1vw;
+
+	// clamp関数で動的にプロパティを設定
+	#{$property}: clamp($min-rem, calc(#{$constant}rem + #{$variable-vw}), $max-rem);
+}
+
+@mixin myClampSpaceSp(
+	$property,
+	$base-size,
+	$min: null,
+	$min-view-port: 300,
+	$max-view-port: 768,
+	$base-view-port: 390
+) {
+	@if $min == null {
+		$min: $base-size * ($min-view-port / $base-view-port); // 最小値を計算
+	}
+
+	// 390px時のサイズを基準に計算
+	$max: $base-size * ($max-view-port / $base-view-port);
+
+	// 可変部分の計算
+	$variable-part: ($max - $min) / ($max-view-port - $min-view-port);
+	$constant: ($min - $min-view-port * $variable-part) / 16;
+
+	// サイズをREM単位で設定
+	$min-rem: $min / 16 * 1rem;
+	$max-rem: $max / 16 * 1rem;
+	$variable-vw: 100 * $variable-part * 1vw;
+
+	#{$property}: clamp($min-rem, calc(#{$constant}rem + #{$variable-vw}), $max-rem);
+}
+
+// @include myClampTranslate(0, -40, -100, 320, 1000);
+@mixin myClampTranslate($translateX, $minY, $maxY, $min-view-port: 320, $max-view-port: 1000) {
+	$variable-part: ($maxY - $minY) / ($max-view-port - $min-view-port);
+	$constant: ($maxY - $max-view-port * $variable-part) / 16;
+
+	$min-rem: $minY / 16 * 1rem;
+	$max-rem: $maxY / 16 * 1rem;
+
+	// vw と rem を分けて足し合わせる
+	$variable-rem: $constant; // 単位なしの値
+	$variable-vw: 100 * $variable-part * 1vw;
+
+	transform: translate(
+		$translateX,
+		clamp($min-rem, calc(#{$variable-rem}rem + #{$variable-vw}), $max-rem)
+	);
+}
+
+// Background Color
+$bgColor: rgba(#fff, 1);
+
+// Color
+$color: rgba(#333, 1);
+$color-link: rgba(#00bfff, 1);
+$color-key: rgba(#3b5c93, 1);

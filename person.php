@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="ja" prefix="og: http://ogp.me/ns# fb: http://www.facebook.com/2008/fbml">
+	<head>			
+		<title>人を知る｜長谷工 コミュニティ九州 RECRUITING SITE</title>
+		
+		<meta charset="UTF-8">
+		<meta name="description" content="description">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="robots" content="index, follow">
+		<meta name="author" content="長谷工 コミュニティ九州">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="Copyright" content="Copyright (C) HASEKO COMMUNITY KYUSHU ALL RIGHTS RESERVED.">
+		
+		<meta property="og:type" content="article">
+		
+		<meta property="og:title" content="人を知る｜長谷工 コミュニティ九州 RECRUITING SITE">
+		<meta property="og:description" content="description">
+		<meta property="og:url" content="url">
+		<meta property="og:image" content="./assets/images/ogp.png">
+		<meta property="og:image:width" content="1200">
+		<meta property="og:image:height" content="630">
+		<meta property="og:site_name" content="長谷工 コミュニティ九州 RECRUITING SITE">
+		
+		<meta name="twitter:card" content="summary">
+		<meta name="twitter:title" content="人を知る｜長谷工 コミュニティ九州 RECRUITING SITE">
+		<meta name="twitter:description" content="description">
+		<meta name="twitter:url" content="url">
+		<meta name="twitter:image" content="./assets/images/ogp.png">
+
+		<link data-n-head="ssr" rel="icon" type="image/x-icon" href="//www.haseko.co.jp/cmq/favicon-16.png">
+		<link href="url" rel="canonical">
+		
+		<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+		<link rel="stylesheet" type="text/css" href="./assets/css/style.css?<?= time() ?>">
+		<link rel="stylesheet" type="text/css" href="./assets/css/style_page.css?<?= time() ?>">
+	</head>
+	<body id="top">
+		
+		<header class="header" id="header">
+			<div class="inner">
+				<div class="logo">
+					<a href="./" aria-label="ホームへ移動">
+						<picture>
+							<source srcset="./assets/images/nav_logo.webp" media="(min-width:769px)">
+							<img src="./assets/images/logo_sp.webp" alt="長谷工">
+						</picture>
+					</a>
+				</div>
+				<div class="box">
+					<div class="btn">
+						<ul>
+							<li><button aria-label="マイページへのポップアップを開く" data-id="mypage">マイページ</button></li>
+							<li><button aria-label="エントリーへのポップアップを開く" data-id="entry">エントリー</button></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</header>
+		
+		<div class="menubar">
+			<button class="menubar__trigger">
+				<span></span>
+				<span></span>
+				<span></span>
+			</button>
+		</div>
+		
+		<div class="popup" id="popup__entry">
+			<div class="popup__inner">
+				<div class="box">
+					<div class="box__head">
+						<h2>エントリー</h2>
+						<div class="popup__close"><button aria-label="ポップアップを閉じる"><img src="./assets/images/close.webp" alt="close" width="50" height="50"></button></div>
+					</div>
+					<div class="box__body">
+						<ul>
+							<li><a href="src" target="_blank" rel="noopener noreferrer" aria-label="マイナビ2026へ移動"><img src="./assets/images/popup_mynavi_2026.webp" alt="マイナビ2026" width="520" height="165"></a></li>
+							<li><a href="src" target="_blank" rel="noopener noreferrer" aria-label="リクナビ2026へ移動"><img src="./assets/images/popup_recnavi_2026.webp" alt="リクナビ2026" width="520" height="165"></a></li>
+							<li><a href="src" target="_blank" rel="noopener noreferrer" aria-label="いずれのIDもお持ちでない場合へ移動"><img src="./assets/images/popup_noid_2026.webp" alt="いずれのIDもお持ちでない場合" width="1040" height="115"></a></li>
+							<li><a href="src" target="_blank" rel="noopener noreferrer" aria-label="マイナビ2027へ移動"><img src="./assets/images/popup_mynavi_2027.webp" alt="マイナビ2027" width="520" height="163"></a></li>
+							<li><a href="src" target="_blank" rel="noopener noreferrer" aria-label="リクナビIDをお持ちの方へ移動" class="disabled"><img src="./assets/images/popup_recnavi_preparation.webp" alt="準備中 リクナビIDをお持ちの方" width="520" height="163"></a></li>
+							<li><a href="src" target="_blank" rel="noopener noreferrer" aria-label="準備中" class="disabled"><img src="./assets/images/popup_preparation.webp" alt="準備中（2027年卒）" width="1040" height="116"></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="popup__bg"></div>
+			</div>
+		</div>
+		
+		<div class="popup" id="popup__mypage">
+			<div class="popup__inner">
+				<div class="box">
+					<div class="box__head">
+						<h2>マイページ</h2>
+						<div class="popup__close"><button aria-label="ポップアップを閉じる"><img src="./assets/images/close.webp" alt="close" width="50" height="50"></button></div>
+					</div>
+					<div class="box__body">
+						<ul>
+							<li><a href="src" target="_blank" rel="noopener noreferrer" aria-label="2026年卒マイページにログインする"><img src="./assets/images/popup_mypage_2026.webp" alt="2026年卒向けマイページ" width="520" height="133"></a></li>
+							<li><a href="src" target="_blank" rel="noopener noreferrer" aria-label="2027年卒マイページにログインする" class="disabled"><img src="./assets/images/popup_mypage_2027.webp" alt="2027年卒向けマイページ" width="520" height="133"></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="popup__bg"></div>
+			</div>
+		</div>
+		
+		<nav class="nav" id="nav">
+			<div class="nav__inner">
+				<div class="logo"><img src="./assets/images/nav_logo.webp" alt="長谷工コミュニティ九州 RECRUITING SITE" width="529" height="80"></div>
+				<div class="box">
+					<div class="list">
+						<ul>
+							<li>
+								<a href="./company.php" aria-label="会社を知るページへ移動">
+									<dl>
+										<dt><img src="./assets/images/nav_company.svg" alt="会社を知る" width="80" height="80"></dt>
+										<dd>会社を知る</dd>
+									</dl>
+								</a>
+								<ul>
+									<li><a href="./company.php#lead" aria-label="会社を知るページの長谷工コミュニティ九州とはへ移動">長谷工コミュニティ九州とは</a></li>
+									<li><a href="./company.php#aboutgroup" aria-label="会社を知るページの長谷工グループとはへ移動">長谷工グループとは</a></li>
+									<li><a href="./company.php#outline" aria-label="会社を知るページの会社概要へ移動">会社概要</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="./works.php" aria-label="仕事を知るページへ移動">
+									<dl>
+										<dt><img src="./assets/images/nav_person.svg" alt="仕事を知る" width="80" height="80"></dt>
+										<dd>仕事を知る</dd>
+									</dl>
+								</a>
+								<ul>
+									<li><a href="./works.php#lead" aria-label="仕事を知るページのマンション管理業務とはへ移動">マンション管理業務とは</a></li>
+									<li><a href="./works.php#front" aria-label="仕事を知るページのフロント営業へ移動">フロント営業</a></li>
+									<li><a href="./works.php#facility" aria-label="仕事を知るページの施設管理へ移動">施設管理</a></li>
+									<li><a href="./works.php#accounting" aria-label="仕事を知るページの管理組合会計へ移動">管理組合会計</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#top" aria-label="人を知るページへ移動">
+									<dl>
+										<dt><img src="./assets/images/nav_person.svg" alt="人を知る" width="80" height="80"></dt>
+										<dd>人を知る</dd>
+									</dl>
+								</a>
+								<ul>
+									<li><a href="#kh" aria-label="人を知るページのK.H（フロント営業）へ移動">K.H（フロント営業）</a></li>
+									<li><a href="#ha" aria-label="人を知るページのH.A（フロント営業）へ移動">H.A（フロント営業）</a></li>
+									<li><a href="#ka" aria-label="人を知るページのK.A（執行役員）へ移動">K.A（執行役員）</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="./system.php" aria-label="制度を知るページへ移動">
+									<dl>
+										<dt><img src="./assets/images/nav_system.svg" alt="制度を知る" width="80" height="80"></dt>
+										<dd>制度を知る</dd>
+									</dl>
+								</a>
+								<ul>
+									<li><a href="./system.php#number" aria-label="制度を知るページの数字で見るへ移動">数字で見る</a></li>
+									<li><a href="./system.php#education" aria-label="制度を知るページの教育制度へ移動">教育制度</a></li>
+									<li><a href="./system.php#career" aria-label="制度を知るページのキャリア制度へ移動">キャリア制度</a></li>
+									<li><a href="./system.php#benefits" aria-label="制度を知るページの福利厚生へ移動">福利厚生</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="./recruit.php" aria-label="採用を知るページへ移動">
+									<dl>
+										<dt><img src="./assets/images/nav_recruit.svg" alt="採用を知る" width="80" height="80"></dt>
+										<dd>採用を知る</dd>
+									</dl>
+								</a>
+								<ul>
+									<li><a href="./recruit.php#lead" aria-label="採用を知るページの人事担当者よりへ移動">人事担当者より</a></li>
+									<li><a href="./recruit.php#flow" aria-label="採用を知るページの選考フローへ移動">選考フロー</a></li>
+									<li><a href="./recruit.php#application" aria-label="採用を知るページの募集要項へ移動">募集要項</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+					<div class="btn" id="nav__btn">
+						<ul>
+							<li><button data-id="mypage">マイページ</button></li>
+							<li><button data-id="entry">エントリー</button></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</nav>
+		
+		<main class="main">
+			
+			<div class="pg person" id="person">
+				
+				<section class="head" id="head">
+					<div class="inner">
+						<h1><img src="./assets/images/person_ttl.webp" alt="ミライニツナグヒトビト" width="270" height="153"></h1>
+					</div>
+				</section>
+				
+				<section class="tabs" id="tabs">
+					<div class="inner">
+						
+						<div class="list">
+							<ul>
+								<li>
+									<a href="#kh" aria-label="フロント営業／2022年入社K.Hのインタビューへ移動">
+										<div class="img"><img src="./assets/images/kh.webp" alt="フロント営業／2022年入社K.H" width="234" height="344"></div>
+										<div class="box">
+											<div class="txt">知識と経験を積んで<br>頼られるフロントヘ。</div>
+											<div class="name">
+												<dl>
+													<dt>フロント営業 / <br class="sp">2022年入社</dt>
+													<dd>K.H</dd>
+												</dl>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#ha" aria-label="フロント営業／2023年入社H.Aのインタビューへ移動">
+										<div class="img"><img src="./assets/images/ha.webp" alt="フロント営業／2023年入社H.A" width="234" height="344"></div>
+										<div class="box">
+											<div class="txt">居住者様の気持ちに<br>寄り添い安全安心な<br>マンションライフを<br>提案する。</div>
+											<div class="name">
+												<dl>
+													<dt>フロント営業 / <br class="sp">2023年入社</dt>
+													<dd>H.A</dd>
+												</dl>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#ka" aria-label="執行役員／2008年入社K.Aのインタビューへ移動">
+										<div class="img"><img src="./assets/images/ka.webp" alt="執行役員／2008年入社K.A" width="234" height="344"></div>
+										<div class="box">
+											<div class="txt">お客様からの感謝と<br>信頼が大きなやりがい<br>につながる。</div>
+											<div class="name">
+												<dl>
+													<dt>執行役員 / <br class="sp">2008年入社</dt>
+													<dd>K.A</dd>
+												</dl>
+											</div>
+										</div>
+									</a>
+								</li>
+							</ul>
+						</div>
+						
+					</div>
+				</section>
+				
+				<section class="content" id="kh">
+					<div class="interview">
+						<div class="inner">
+							<h2 class="sp">知識と経験を積んで頼られる<br>フロントヘ。</h2>
+							<div class="visual">
+								<picture>
+									<source srcset="./assets/images/kh_mv.webp" media="(min-width:769px)">
+									<img src="./assets/images/kh_mv_sp.webp" alt="フロント営業／2022年入社K.H">
+								</picture>
+							</div>
+							<h2 class="pc">知識と経験を積んで頼られるフロントヘ。</h2>
+							<div class="name">
+								<dl>
+									<dt>K.H</dt>
+									<dd>マンション管理部　フロント営業</dd>
+									<dd>2022年入社｜福岡県出身</dd>
+								</dl>
+							</div>
+							<div class="box">
+								<div class="img pc"><img src="./assets/images/kh_1.webp" alt="" width="504" height="341"></div>
+								<div class="txt">
+									<h3>
+										「何でもやります！」<br>
+										面接では元気をアピール。
+									</h3>
+									<p>不動産関係の仕事に興味があったので、大学在学中に宅建（宅地建物取引士）の資格を取りました。先に入社していた大学の先輩から「人と話すのが好きなお前に向いてるんじゃないか」と紹介してもらったのが当社でした。それまでマンション管理について知らなかったのですが、自分の考えでそのマンションをより良くしていける仕事だと知り、興味がわき目指してみようと思いました。当社一本に絞っていたので、面接では「何でもやります！」と元気の良さを猛アピールしました（笑）。</p>
+									<div class="img sp"><img src="./assets/images/kh_1.webp" alt="" width="504" height="341"></div>
+									<h3>
+										仕事の厳しさを知った１年目。<br>
+										学生気分からの脱却。
+									</h3>
+									<p>私の仕事は分譲マンションにお住まいの住居者様に対して、安心で快適な生活を送っていただくための工事提案や問題対応、資金計画の作成などを行なうことです。学生の頃から企画や提案をすることが好きだったので最初は自信があったのですが、自分がいいと思った案がお客様にはあまり響かなかったり、実際の仕事の難しさを痛感しました。入社して間もない頃は知識や経験も浅く、クレーム対応が上手くできなかったり、まさに試行錯誤の日々でした。</p>
+								</div>
+							</div>
+							<div class="box box__r">
+								<div class="img pc"><img src="./assets/images/kh_2.webp" alt="" width="504" height="380"></div>
+								<div class="txt">
+									<h3>
+										尊敬する上司の存在が<br>
+										仕事のやる気にもつながる。
+									</h3>
+									<p>マンション管理は経験と知識が重要な仕事だと思います。対応力が素晴らしい上司がいるのですが、その方の仕事ぶりを見ていつもすごいなぁと尊敬しています。いつかは私もあんな風にどんな事にも対処できる力をつけたいです。職場にはそんな頼れる先輩がたくさんいるので、困った時はすぐに相談し、アドバイスをいただきます。不動産系は厳しい体育会系のイメージがあったのですが、当社は明るく気軽に話しやすい空気があります。先日も先輩と休日に牡蠣小屋や岩盤浴に行きました。年代関係なく本当に仲がいいんです！</p>
+									<div class="img sp"><img src="./assets/images/kh_2.webp" alt="" width="504" height="380"></div>
+									<h3>
+										大切なのは<br class="pc">誠実に向き合うこと。
+									</h3>
+									<p>入社3年目には担当のマンションを持つようになり責任感も増し、人間的にも少しは成長できたかなと思います。これからは後輩も増え、教えてもらう側から教える側になるという自覚を持って日々の業務に励んでいきたいです。私が仕事をする上で大切にしているのは、誠実に向き合うこと。トラブルが起こった時は、とにかくすぐに報告し問題の早期解決を心掛けています。理事会や住民の方などたくさんの人と話す機会も多く、コミュニケーション能力を求められる仕事ですが、場数を踏むことで身についてくると思います。心配せずに、まずはチャレンジしてほしいです！</p>
+								</div>
+							</div>
+							<div class="message">
+								<div class="message__inner">
+									<h3>働きたい方へ応援メッセージ</h3>
+									<div class="txt">
+										<picture>
+											<source srcset="./assets/images/message_kh.webp" media="(min-width:769px)">
+											<img src="./assets/images/message_kh_sp.webp" alt="未経験でも大歓迎。人と話すことが好きなら素質あり！">
+										</picture>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="schedule">
+						
+						<h2>ある1日のタイムスケジュール</h2>
+						<ul class="schedule__slider">
+							<li>
+								<div class="time">08:45</div>
+								<h3>出社</h3>
+								<p>自宅からバスで約30分の通勤。長谷工コミュニティ九州がある博多は地下鉄やバスなど公共交通機関が充実！</p>
+							</li>
+							<li>
+								<div class="time">09:00</div>
+								<h3>朝礼</h3>
+								<p>部内での報告や連絡事項の確認。その後、午前中は問い合わせメールの返信や、理事会の議事録作成など事務作業を行う。</p>
+							</li>
+							<li>
+								<div class="time">13:00</div>
+								<h3>課題対応</h3>
+								<p>前回の理事会で出た課題やテーマについて調査。先輩たちにアドバイスをもらい、お客様に喜んでもらえる提案を考える。</p>
+							</li>
+							<li>
+								<div class="time">14:00</div>
+								<h3>物件会議</h3>
+								<p>担当物件の今後の管理提案会議では、物件の現状や課題を整理し、より良い運営を目指すための具体的な施策を話し合います。</p>
+							</li>
+							<li>
+								<div class="time">15:00</div>
+								<h3>理事会資料作成</h3>
+								<p>次回の理事会に向けて資料づくり。使う言葉や伝え方など、聞く人の立場に立った分かりやすい資料を目指す。</p>
+							</li>
+							<li>
+								<div class="time">17:00</div>
+								<h3>マンション巡回</h3>
+								<p>担当するマンションへ行き、清掃や管理が行き届いているかチェック。住民の方から直接お話伺うことも。</p>
+							</li>
+							<li>
+								<div class="time">17:30</div>
+								<h3>終業</h3>
+								<p>仕事が終わった後、先輩と一緒に飲み会やサウナに行くことで、心身ともにリフレッシュ。日々の活力につながります。</p>
+							</li>
+							<li></li>
+						</ul>
+					</div>
+				</section>
+				
+				<section class="content" id="ha">
+					<div class="interview">
+						<div class="inner">
+							<h2 class="sp">
+								居住者様の気持ちに寄り添い<br>
+								安全安心な<br>
+								マンションライフを提案する。
+							</h2>
+							<div class="visual">
+								<picture>
+									<source srcset="./assets/images/ha_mv.webp" media="(min-width:769px)">
+									<img src="./assets/images/ha_mv_sp.webp" alt="フロント営業／2023年入社H.A">
+								</picture>
+							</div>
+							<h2 class="pc">
+								居住者様の気持ちに寄り添い<br>
+								安全安心なマンションライフを提案する。
+							</h2>
+							<div class="name">
+								<dl>
+									<dt>H.A</dt>
+									<dd>マンション管理部　フロント営業</dd>
+									<dd>2023年入社｜福岡県出身</dd>
+								</dl>
+							</div>
+							<div class="box">
+								<div class="img pc"><img src="./assets/images/ha_1.webp" alt="" width="504" height="380"></div>
+								<div class="txt">
+									<h3>自信を持って安心安全を<br class="sp">提供できる仕事。</h3>
+									<p>就活の時までマンション管理業界のことを全く知りませんでした。合同企業説明会の際に当社の説明を聞いたことがきっかけです。マンション管理は居住者様の生活と気持ちに寄り添った提案を行うということ以外に、長谷工の物件は阪神淡路大震災の時にほぼ倒れなかったという話を聞き、安全安心な住環境を自信を持って提供できる仕事だと思い当社を目指しました。他にもマンションのコミュニティづくりでお祭りなどのイベント提案をしているのも楽しそうと感じました。大学時代、文化祭の実行委員をするなどイベント好きなので、そういうところにも興味がありました。</p>
+									<div class="img sp"><img src="./assets/images/ha_1.webp" alt="" width="504" height="380"></div>
+									<h3>
+										若手社員の育成を<br>
+										会社全体でサポートしてくれる。
+									</h3>
+									<p>入社１年目は年齢の近い先輩について仕事を教えてもらうブラザー・シスター（BS）制度や、定期的なミーティングを通して仕事やキャリアのアドバイスをもらえるネクスター制度など、新人をサポートしてくれる体制が整っています。相談できる人が多いので安心して仕事を覚えることができました。節目に、集合研修で長谷工グループの同期の方々と交流できる機会があるのも楽しみの一つです。職場の雰囲気も良く、先輩たちもいい人ばかりで楽しく仕事をさせていただいています。こうした職場の支えがあるからこそ、前向きに仕事に向き合えています。</p>
+								</div>
+							</div>
+							<div class="box box__r">
+								<div class="img pc"><img src="./assets/images/ha_2.webp" alt="" width="504" height="345"></div>
+								<div class="txt">
+									<h3>
+										「あなたなら安心して任せられる」と<br>
+										言っていただける日を目指して。
+									</h3>
+									<p>今はまだ先輩のサブ担当として理事会に出席することが多いですが、以前理事会役員の方に「お願いしたことを反映した資料を作ってくれてありがとう」と言っていただけたことがとても嬉しかったです。この仕事はお客様との距離が近く、信頼関係を築くのが何よりも大切。頑張ったことを直接評価していただけるのは、やりがいを感じる瞬間でもあります。お客様だけでなく、先輩や後輩からも「Hさんなら安心して任せられる」と思ってもらえるよう、日々の業務を大切にして信頼を築いていきたいです。</p>
+									<div class="img sp"><img src="./assets/images/ha_2.webp" alt="" width="504" height="345"></div>
+									<h3>
+										お客様の立場に立った<br>
+										より良い提案のために。
+									</h3>
+									<p>まだまだうまくできないことも多いですが、提案をする時はお客様に伝わりやすい言葉を使うことを意識しています。また、相手の立場に立って質問などを事前に推測し、質疑に答えられるよう事前準備を大切にしています。もっと知識を増やすために入社1年目に取得した管理義務主任者の資格の他にも、マンション管理士や宅建士などの資格取得にも挑戦したいと考えています。入社前は不安もありましたが、今ではこの仕事は自分にとても合っていると感じています！</p>
+								</div>
+							</div>
+							<div class="message">
+								<div class="message__inner">
+									<h3>働きたい方へ応援メッセージ</h3>
+									<div class="txt">
+										<picture>
+											<source srcset="./assets/images/message_ha.webp" media="(min-width:769px)">
+											<img src="./assets/images/message_ha_sp.webp" alt="就活の不安な日々はいつか思い出話になる。あなたなら大丈夫！">
+										</picture>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="schedule">
+						<h2>ある1日のタイムスケジュール</h2>
+						<ul class="schedule__slider">
+							<li>
+								<div class="time">8:50</div>
+								<h3>出社</h3>
+								<p>資料作成や事前確認など、理事会の準備を行う。今はまだ先輩と一緒にサブフロントとして出席。</p>
+							</li>
+							<li>
+								<div class="time">9:00</div>
+								<h3>朝礼</h3>
+								<p>部内での報告や連絡事項の確認。その後、メールチェックや返信対応。物件のトラブル報告の処理などを行う。</p>
+							</li>
+							<li>
+								<div class="time">13:00</div>
+								<h3>物件巡回</h3>
+								<p>マンション管理員（ライフマネージャー）から物件の現状報告や連絡事項について確認する。</p>
+							</li>
+							<li>
+								<div class="time">14:00</div>
+								<h3>総会・理事会資料作成</h3>
+								<p>次回の理事会に向けて資料づくり。使う言葉や伝え方など、聞く人の立場に立った分かりやすい資料を目指す。</p>
+							</li>
+							<li>
+								<div class="time">17:30</div>
+								<h3>終業</h3>
+								<p>総会や理事会直前は残業することもあるけれど、通常は定時に終了。趣味の韓国ドラマを見たり自分時間を楽しむ。</p>
+							</li>
+							<li></li>
+						</ul>
+					</div>
+				</section>
+				
+				<section class="content" id="ka">
+					<div class="interview">
+						<div class="inner">
+							<h2 class="sp">
+								お客様からの<br class="pc">感謝と信頼が<br class="sp">大きなやりがいにつながる。
+							</h2>
+							<div class="visual">
+								<picture>
+									<source srcset="./assets/images/ka_mv.webp" media="(min-width:769px)">
+									<img src="./assets/images/ka_mv_sp.webp" alt="執行役員／2008年入社K.A">
+								</picture>
+							</div>
+							<h2 class="pc">
+								お客様からの<br class="pc">感謝と信頼が<br class="sp">大きなやりがいにつながる。
+							</h2>
+							<div class="name">
+								<dl>
+									<dt>K.A</dt>
+									<dd>執行役員</dd>
+									<dd>2008年入社｜熊本県出身</dd>
+								</dl>
+							</div>
+							<div class="box">
+								<div class="img pc"><img src="./assets/images/ka_1.webp" alt="" width="504" height="380"></div>
+								<div class="txt">
+									<h3>
+										マンション運営の<br class="pc">中核を<br class="sp">担う重要な仕事。
+									</h3>
+									<p>マンション管理フロントという仕事は多岐にわたる業務を通じてマンション全体を円滑に運営すること。そして、マンション内で起こる様々な問題を迅速かつ的確に対応することで快適な生活環境を維持し、お住いの方が安心して暮らせるようサポートを行う重要な役目です。例えば、共有スペース利用に関する住民間のトラブルを調整する際には、双方の意見を的確に汲み取り、公平な解決策を提案するなど、単なる管理業務ではなくお客様としっかり対話し、信頼関係を築くことが大切な仕事です。</p>
+									<div class="img sp"><img src="./assets/images/ka_1.webp" alt="" width="504" height="380"></div>
+									<h3>
+										「ありがとう」<br>
+										その一言で報われる。
+									</h3>
+									<p>この仕事の一番の魅力は、お住いの方から感謝していただき、信頼を得られる点だと思います。自分の提案が形になり、お客様から「ありがとう」の言葉を直接頂ける。それがやりがいになっています。また、お客様と10年20年と永いお付き合いができるのも嬉しいですね。親しくなってくると、部屋のリフォームやマンション売買など、管理以外の相談を受けることもあります。長谷工にはそういった関連グループ会社があるので、幅広いご相談に乗れるのも強みです。マンションと言っても住居者様にとっては直接生活に関わること。どんなことでも真摯に向き合うことが大切だと思っています。</p>
+								</div>
+							</div>
+							<div class="box box__r">
+								<div class="img pc"><img src="./assets/images/ka_2.webp" alt="" width="504" height="380"></div>
+								<div class="txt">
+									<h3>
+										話しやすく、<br>
+										働きやすい職場づくり。
+									</h3>
+									<p>私は管理職なので多くの部下を見る立場にあるため、部署のメンバーがいつでも相談しやすい雰囲気をつくるよう心がけています。雑談しながら気になることを気軽に聞けるよう、飲み会もよく開催します。当社が新卒を採用するようになって５年ほどですが、辞めた人はまだいません。直属の先輩だけでなく、会社全体で若手社員の成長を応援しています。マンション管理に不可欠な国家資格「管理業務主任者」やその他の資格を取得するために支援制度も整っています。また、個性豊かで楽しい社員が多く、社内がいつも明るいのも自慢の一つです。</p>
+									<div class="img sp"><img src="./assets/images/ka_2.webp" alt="" width="504" height="380"></div>
+									<h3>
+										想像力が<br class="pc">より良い提案を生む。
+									</h3>
+									<p>私が仕事をする上で大切にしているのは、想像力を持つこと。目先のことだけでなく、数十年後のことも思い描くこと。そうするときっとお客様にとっても、マンションにとっても、いい提案ができると思います。マンション管理フロント業務という仕事は、多くの人の生活を支える非常に重要な役割を担っています。その分やりがいも大きい仕事です。お客様からの感謝の言葉は本当に嬉しいものです。夢を持って働きたい方、優しい先輩と仕事がしたい方はぜひ飛び込んできてください！お待ちしています。</p>
+								</div>
+							</div>
+							<div class="message">
+								<div class="message__inner">
+									<h3>働きたい方へ応援メッセージ</h3>
+									<div class="txt">
+										<picture>
+											<source srcset="./assets/images/message_ka.webp" media="(min-width:769px)">
+											<img src="./assets/images/message_ka_sp.webp" alt="やりがいを探している人きっとここにあります！">
+										</picture>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="schedule">
+						<h2>ある1日のタイムスケジュール</h2>
+						<ul class="schedule__slider">
+							<li>
+								<div class="time">08:00</div>
+								<h3>出社</h3>
+								<p>始業１時間前に来てメールや前日に出されている報告のチェックなど、事務作業の時間として活用。</p>
+							</li>
+							<li>
+								<div class="time">9:00</div>
+								<h3>朝礼</h3>
+								<p>各支店の出勤情報や本日の予定、報告を確認。社員に伝えたいことも朝礼の際に伝達する。</p>
+							</li>
+							<li>
+								<div class="time">10:00</div>
+								<h3>社内会議</h3>
+								<p>マンション管理員（ライフマネージャー）の採用についてや関連会社の成果に関する報告など。</p>
+							</li>
+							<li>
+								<div class="time">13:00</div>
+								<h3>取引先訪問</h3>
+								<p>新築マンションを企画するデベロッパーとの計画打ち合わせなど。建物の設計段階から管理の視点を取り入れる。</p>
+							</li>
+							<li>
+								<div class="time">17:00</div>
+								<h3>部内打ち合わせ及び事務作業</h3>
+								<p>社内会議や稟議確認作業など。 マンション管理に関わる今後の方針について会議を行う。 </p>
+							</li>
+							<li>
+								<div class="time">17:30</div>
+								<h3>終業</h3>
+								<p>仕事が終わった後、部下から相談を受けたり、理事会役員との会食や支店のメンバーと食事会を開催することも。</p>
+							</li>
+							<li></li>
+						</ul>
+					</div>
+				</section>
+				
+			</div>
+
+		</main>
+		
+		<footer class="footer">
+			<div class="inner">
+				
+				<div class="head">
+					<a href="./" aria-label="ホームへ移動">
+						<picture>
+							<source srcset="./assets/images/logo.svg" media="(min-width:769px)">
+							<img src="./assets/images/logo_f_sp.webp" alt="長谷工コミュニティ九州">
+						</picture>
+					</a>
+				</div>
+				<nav class="fnav">
+					<div class="box">
+						<h3><a href="./company.php" aria-label="会社を知るページへ移動">会社を知る</a></h3>
+						<ul>
+							<li><a href="./company.php#lead" aria-label="会社を知るページの長谷工コミュニティ九州とはへ移動">長谷工コミュニティ九州とは</a></li>
+							<li><a href="./company.php#aboutgroup" aria-label="会社を知るページの長谷工グループとはへ移動">長谷工グループとは</a></li>
+							<li><a href="./company.php#outline" aria-label="会社を知るページの会社概要へ移動">会社概要</a></li>
+						</ul>
+					</div>
+					<div class="box">
+						<h3><a href="./works.php" aria-label="仕事を知るページへ移動">仕事を知る</a></h3>
+						<ul>
+							<li><a href="./works.php#lead" aria-label="仕事を知るページのマンション管理業務とはへ移動">マンション管理業務とは</a></li>
+							<li><a href="./works.php#front" aria-label="仕事を知るページのフロント営業へ移動">フロント営業</a></li>
+							<li><a href="./works.php#facility" aria-label="仕事を知るページの施設管理へ移動">施設管理</a></li>
+							<li><a href="./works.php#accounting" aria-label="仕事を知るページの管理組合会計へ移動">管理組合会計</a></li>
+						</ul>
+					</div>
+					<div class="box">
+						<h3><a href="#top" aria-label="人を知るページへ移動">人を知る</a></h3>
+						<ul>
+							<li><a href="#kh" aria-label="人を知るページのK.H（フロント営業）へ移動">K.H（フロント営業）</a></li>
+							<li><a href="#ha" aria-label="人を知るページのH.A（フロント営業）へ移動">H.A（フロント営業）</a></li>
+							<li><a href="#ka" aria-label="人を知るページのK.A（執行役員）へ移動">K.A（執行役員）</a></li>
+						</ul>
+					</div>
+					<div class="box">
+						<h3><a href="./system.php" aria-label="制度を知るページへ移動">制度を知る</a></h3>
+						<ul>
+							<li><a href="./system.php#number" aria-label="制度を知るページの数字で見るへ移動">数字で見る</a></li>
+							<li><a href="./system.php#education" aria-label="制度を知るページの教育制度へ移動">教育制度</a></li>
+							<li><a href="./system.php#career" aria-label="制度を知るページのキャリア制度へ移動">キャリア制度</a></li>
+							<li><a href="./system.php#benefits" aria-label="制度を知るページの福利厚生へ移動">福利厚生</a></li>
+						</ul>
+					</div>
+					<div class="box">
+						<h3><a href="./recruit.php" aria-label="採用を知るページへ移動">採用を知る</a></h3>
+						<ul>
+							<li><a href="./recruit.php#lead" aria-label="採用を知るページの人事担当者よりへ移動">人事担当者より</a></li>
+							<li><a href="./recruit.php#flow" aria-label="採用を知るページの選考フローへ移動">選考フロー</a></li>
+							<li><a href="./recruit.php#application" aria-label="採用を知るページの募集要項へ移動">募集要項</a></li>
+						</ul>
+					</div>
+				</nav>
+				<div class="entries">
+					<h3>エントリーはこちらから</h3>
+					<ul>
+						<li><a href="" target="_blank" rel="noopener noreferrer" aria-label="マイナビ2026へ移動"><img src="./assets/images/banner_mynavi_2026.webp" alt="マイナビ2026" width="293" height="92"></a></li>
+						<li><a href="" target="_blank" rel="noopener noreferrer" aria-label="リクナビ2026へ移動"><img src="./assets/images/banner_recnavi_2026.webp" alt="リクナビ2026" width="293" height="92"></a></li>
+						<li><a href="" target="_blank" rel="noopener noreferrer" aria-label="いずれのIDもお持ちでない場合へ移動"><img src="./assets/images/banner_noid_2026.webp" alt="いずれのIDもお持ちでない方" width="293" height="92"></a></li>
+						<li><a href="" target="_blank" rel="noopener noreferrer" aria-label="マイナビ2027へ移動"><img src="./assets/images/banner_mynavi_2027.webp" alt="マイナビ2027" width="293" height="92"></a></li>
+						<li><img src="./assets/images/banner_recnavi_preparation.webp" alt="準備中 リクナビIDをお持ちの方" width="293" height="92"></li>
+						<li><img src="./assets/images/banner_preparation.webp" alt="準備中（2027年卒）" width="293" height="92"></li>
+					</ul>
+				</div>
+				<div class="mypage">
+					<h3>マイページはこちらから</h3>
+					<p>会社説明会の予約は、マイページから受け付けています。</p>
+					<ul>
+						<li><a href="" target="_blank" rel="noopener noreferrer" aria-label="2026年卒マイページにログインする"><span>マイページにログイン（2026年卒）</span></a></li>
+						<li><a href="" target="_blank" rel="noopener noreferrer" aria-label="2027年卒マイページにログインする" class="disabled"><span>マイページ準備中（2027年卒）</span></a></li>
+					</ul>
+				</div>
+				<div class="btns">
+					<ul>
+						<li><a href="" target="_blank" rel="noopener noreferrer" aria-label="コーポレートサイトへ移動">コーポレートサイト</a></li>
+						<li><a href="" target="_blank" rel="noopener noreferrer" aria-label="個人情報保護方針へ移動">個人情報保護方針</a></li>
+						<li><a href="" target="_blank" rel="noopener noreferrer" aria-label="お問い合わせ窓口へ移動">お問い合わせ窓口</a></li>
+					</ul>
+				</div>
+				<div class="copy">Copyright&copy; <a href="//www.haseko.co.jp/cmq/" target="_blank" rel="noopener noreferrer" aria-label="長谷工コミュニティ九州のウェブサイトへ移動">HASEKO COMMUNITY KYUSHU</a>. All rights reserved.</div>
+				
+			</div>
+		</footer>
+		
+		<div class="fbtn">
+			<button><img src="./assets/images/f_btn.webp" alt="ENTRY&MYPAGE"></button>
+		</div>
+				
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+		<script src="./assets/js/script.js?<?= time() ?>"></script>
+		
+	</body>
+</html>
