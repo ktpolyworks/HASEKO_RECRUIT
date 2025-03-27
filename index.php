@@ -105,7 +105,12 @@
 
 		<nav class="nav" id="nav">
 			<div class="nav__inner">
-				<div class="logo"><img src="./assets/images/nav_logo.webp" alt="長谷工コミュニティ九州 RECRUITING SITE" width="529" height="80"></div>
+				<div class="logo">
+					<picture>
+						<source srcset="./assets/images/nav_logo.webp" media="(min-width:769px)">
+						<img src="./assets/images/logo_sp.webp" alt="長谷工コミュニティ九州 RECRUITING SITE">
+					</picture>
+				</div>
 				<div class="box">
 					<div class="list" id="nav__list">
 						<ul>
