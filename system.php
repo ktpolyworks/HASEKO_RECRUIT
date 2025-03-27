@@ -108,7 +108,7 @@
 			<div class="nav__inner">
 				<div class="logo"><img src="./assets/images/nav_logo.webp" alt="長谷工コミュニティ九州 RECRUITING SITE" width="529" height="80"></div>
 				<div class="box">
-					<div class="list">
+					<div class="list" id="nav__list">
 						<ul>
 							<li>
 								<a href="./company.php" aria-label="会社を知るページへ移動">

@@ -1,0 +1,7 @@
+<svg id="plus_w" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <g id="_1" data-name="1">
+    <path id="Line_1" data-name="Line 1" d="M16,1H0V-1H16Z" transform="translate(0 8)" fill="#fff"/>
+    <path id="Line_2" data-name="Line 2" d="M1,16H-1V0H1Z" transform="translate(8)" fill="#fff"/>
+  </g>
+  <rect id="Rectangle_21" data-name="Rectangle 21" width="16" height="16" fill="#dd2a2a" opacity="0"/>
+</svg>

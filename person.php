@@ -105,11 +105,52 @@
 			</div>
 		</div>
 		
+		<div class="popup__sp" id="popup__sp">
+			<div class="popup__sp__inner">
+				<div class="entry">
+					<h2><img src="./assets/images/popup_sp_entry.webp" alt="エントリーはこちらから" width="336" height="35"></h2>
+					<ul>
+						<li><a href="" target="_blank" rel="noopener noreferrer" aria-label="マイナビ2026へ移動"><img src="./assets/images/mynavi_2026_sp.webp" alt="マイナビ2026"></a></li>
+						<li><a href="" target="_blank" rel="noopener noreferrer" aria-label="リクナビ2026へ移動"><img src="./assets/images/recnavi_2026_sp.webp" alt="リクナビ2026"></a></li>
+						<li><a href="" target="_blank" rel="noopener noreferrer" aria-label="いずれのIDもお持ちでない場合へ移動"><img src="./assets/images/noid_2026_sp.webp" alt="いずれのIDもお持ちでない方"></a></li>
+					</ul>
+					<ul>
+						<li><a href="" target="_blank" rel="noopener noreferrer" aria-label="マイナビ2027へ移動"><img src="./assets/images/mynavi_2027_sp.webp" alt="マイナビ2027"></a></li>
+						<li><img src="./assets/images/recnavi_2027_sp.webp" alt="リクナビ2027"></li>
+						<li><img src="./assets/images/preparation_sp.webp" alt="準備中（2027年卒）"></li>
+					</ul>
+				</div>
+				<div class="mypage">
+					<h2><img src="./assets/images/popup_sp_mypage.webp" alt="マイページはこちらから" width="336" height="35"></h2>
+					<p>
+						会社説明会の予約は、<br>
+						マイページから受け付けています。
+					</p>
+					<ul>
+						<li><a href="" target="_blank" rel="noopener noreferrer" aria-label="2026年卒マイページにログインする"><img src="./assets/images/mypage_sp_2026.webp" alt="マイページにログイン（2026年卒）"></a></li>
+						<li><img src="./assets/images/mypage_sp_2027.webp" alt="マイページ準備中（2027年卒）"></li>
+					</ul>
+				</div>
+			</div>
+			<div class="closebtn" id="closebtn">
+				<button class="closebtn__trigger">
+					<span></span>
+					<span></span>
+					<span></span>
+				</button>
+			</div>
+		</div>
+		
 		<nav class="nav" id="nav">
 			<div class="nav__inner">
-				<div class="logo"><img src="./assets/images/nav_logo.webp" alt="長谷工コミュニティ九州 RECRUITING SITE" width="529" height="80"></div>
+				<div class="logo">
+					<picture>
+						<source srcset="./assets/images/nav_logo.webp" media="(min-width:769px)">
+						<img src="./assets/images/logo_sp.webp" alt="長谷工コミュニティ九州 RECRUITING SITE">
+					</picture>
+				</div>
 				<div class="box">
-					<div class="list">
+					<div class="list" id="nav__list">
 						<ul>
 							<li>
 								<a href="./company.php" aria-label="会社を知るページへ移動">

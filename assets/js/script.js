@@ -142,10 +142,29 @@ jQuery(function () {
 		$("#popup__" + _target).fadeIn()
 	})
 
-	$("#nav a").on("click", function () {
-		isMenuActive = !isMenuActive
-		$(".menubar__trigger").toggleClass("active", isMenuActive)
-		$(".nav").fadeToggle()
+	if (window.matchMedia("(max-width:768px)").matches) {
+		$("#nav__list>ul>li>a").on("click", function (e) {
+			e.preventDefault()
+			$(this).siblings("ul").stop(true, true).slideToggle()
+		})
+		$("#nav__list>ul>li>ul>li>a").on("click", function () {
+			isMenuActive = !isMenuActive
+			$(".menubar__trigger").toggleClass("active", isMenuActive)
+			$(".nav").fadeToggle()
+		})
+	} else {
+		$("#nav a").on("click", function () {
+			isMenuActive = !isMenuActive
+			$(".menubar__trigger").toggleClass("active", isMenuActive)
+			$(".nav").fadeToggle()
+		})
+	}
+
+	$(".fbtn button").on("click", function () {
+		$("#popup__sp").fadeIn()
+	})
+	$("#closebtn").on("click", function () {
+		$("#popup__sp").fadeOut()
 	})
 })
 
