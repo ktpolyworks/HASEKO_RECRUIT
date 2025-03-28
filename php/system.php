@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="ja" prefix="og: http://ogp.me/ns# fb: http://www.facebook.com/2008/fbml">
+	<head>			
+		<title>制度を知る｜長谷工 コミュニティ九州 RECRUITING SITE</title>
+		
+		<meta charset="UTF-8">
+		<meta name="description" content="description">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="robots" content="index, follow">
+		<meta name="author" content="長谷工 コミュニティ九州">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="Copyright" content="Copyright (C) HASEKO COMMUNITY KYUSHU ALL RIGHTS RESERVED.">
+		
+		<meta property="og:type" content="article">
+		
+		<meta property="og:title" content="制度を知る｜長谷工 コミュニティ九州 RECRUITING SITE">
+		<meta property="og:description" content="description">
+		<meta property="og:url" content="url">
+		<meta property="og:image" content="./assets/images/ogp.png">
+		<meta property="og:image:width" content="1200">
+		<meta property="og:image:height" content="630">
+		<meta property="og:site_name" content="長谷工 コミュニティ九州 RECRUITING SITE">
+		
+		<meta name="twitter:card" content="summary">
+		<meta name="twitter:title" content="制度を知る｜長谷工 コミュニティ九州 RECRUITING SITE">
+		<meta name="twitter:description" content="description">
+		<meta name="twitter:url" content="url">
+		<meta name="twitter:image" content="./assets/images/ogp.png">
+
+		<link data-n-head="ssr" rel="icon" type="image/x-icon" href="//www.haseko.co.jp/cmq/favicon-16.png">
+		<link href="url" rel="canonical">
+		
+		<link rel="stylesheet" type="text/css" href="./assets/css/style.css?<?= time() ?>">
+		<link rel="stylesheet" type="text/css" href="./assets/css/style_page.css?<?= time() ?>">
+	</head>
+	<body id="top">
+		
+		<header class="header" id="header">
+			<div class="inner">
+				<div class="logo">
+					<a href="./" aria-label="ホームへ移動">
+						<picture>
+							<source srcset="./assets/images/nav_logo.webp" media="(min-width:769px)">
+							<img src="./assets/images/logo_sp.webp" alt="長谷工">
+						</picture>
+					</a>
+				</div>
+				<div class="box">
+					<div class="btn">
+						<ul>
+							<li><button aria-label="マイページへのポップアップを開く" data-id="mypage">マイページ</button></li>
+							<li><button aria-label="エントリーへのポップアップを開く" data-id="entry">エントリー</button></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</header>
+		
+		<div class="menubar">
+			<button class="menubar__trigger">
+				<span></span>
+				<span></span>
+				<span></span>
+			</button>
+		</div>
+		
+		<div class="popup" id="popup__entry">
+			<div class="popup__inner">
+				<div class="box">
+					<div class="box__head">
+						<h2>エントリー</h2>
+						<div class="popup__close"><button aria-label="ポップアップを閉じる"><img src="./assets/images/close.webp" alt="close" width="50" height="50"></button></div>
+					</div>
+					<div class="box__body">
+						<ul>
+							<li>
+								<a href="https://job.mynavi.jp/26/pc/optqqQjvA/info.html?corpId=248206" target="_blank" rel="noopener noreferrer" aria-label="マイナビ2026へ移動">
+									<picture>
+										<source srcset="./assets/images/popup_mynavi_2026.webp" media="(min-width:769px)">
+										<img src="./assets/images/popup_mynavi_2026_sp.webp" alt="マイナビ2026">
+									</picture>
+								</a>
+							</li>
+							<li>
+								<a href="https://job.rikunabi.com/2026/company/r556672054/" target="_blank" rel="noopener noreferrer" aria-label="リクナビ2026へ移動">
+									<picture>
+										<source srcset="./assets/images/popup_recnavi_2026.webp" media="(min-width:769px)">
+										<img src="./assets/images/popup_recnavi_2026_sp.webp" alt="リクナビ2026">
+									</picture>
+								</a>
+							</li>
+							<li>
+								<a href="https://job.axol.jp/qd/s/haseko_26/entry/agreement" target="_blank" rel="noopener noreferrer" aria-label="いずれのIDもお持ちでない場合へ移動">
+									<picture>
+										<source srcset="./assets/images/popup_noid_2026.webp" media="(min-width:769px)">
+										<img src="./assets/images/popup_noid_2026_sp.webp" alt="いずれのIDもお持ちでない場合">
+									</picture>
+								</a>
+							</li>
+							<li class="ul2027">
+								<a href="https://job.mynavi.jp/27/pc/search/corp248206/is.html" target="_blank" rel="noopener noreferrer" aria-label="マイナビ2027へ移動">
+									<picture>
+										<source srcset="./assets/images/popup_mynavi_2027.webp" media="(min-width:769px)">
+										<img src="./assets/images/popup_mynavi_2027_sp.webp" alt="マイナビ2027">
+									</picture>
+								</a>
+							</li>
+							<li>
+								<a href="#" target="_blank" rel="noopener noreferrer" aria-label="リクナビIDをお持ちの方へ移動" class="disabled">
+									<picture>
+										<source srcset="./assets/images/popup_recnavi_preparation.webp" media="(min-width:769px)">
+										<img src="./assets/images/popup_recnavi_preparation_sp.webp" alt="準備中 リクナビIDをお持ちの方">
+									</picture>
+								</a>
+							</li>
+							<li>
+								<a href="#" target="_blank" rel="noopener noreferrer" aria-label="準備中" class="disabled">
+									<picture>
+										<source srcset="./assets/images/popup_preparation.webp" media="(min-width:769px)">
+										<img src="./assets/images/popup_preparation_sp.webp" alt="準備中（2027年卒）">
+									</picture>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="popup__bg"></div>
+			</div>
+		</div>
+		
+		<div class="popup" id="popup__mypage">
+			<div class="popup__inner">
+				<div class="box">
+					<div class="box__head">
+						<h2>マイページ</h2>
+						<div class="popup__close"><button aria-label="ポップアップを閉じる"><img src="./assets/images/close.webp" alt="close" width="50" height="50"></button></div>
+					</div>
+					<div class="box__body">
+						<ul>
+							<li>
+								<a href="https://job.axol.jp/qd/s/haseko_26/mypage/login" target="_blank" rel="noopener noreferrer" aria-label="2026年卒マイページにログインする">
+									<picture>
+										<source srcset="./assets/images/popup_mypage_2026.webp" media="(min-width:769px)">
+										<img src="./assets/images/popup_mypage_2026_sp.webp" alt="2026年卒向けマイページ">
+									</picture>
+								</a>
+							</li>
+							<li>
+								<a href="#" target="_blank" rel="noopener noreferrer" aria-label="2027年卒マイページにログインする" class="disabled">
+									<picture>
+										<source srcset="./assets/images/popup_mypage_2027.webp" media="(min-width:769px)">
+										<img src="./assets/images/popup_mypage_2027_sp.webp" alt="2027年卒向けマイページ">
+									</picture>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="popup__bg"></div>
+			</div>
+		</div>
+		
+		<div class="popup__sp" id="popup__sp">
+			<div class="popup__sp__inner">
+				<div class="entry">
+					<h2><img src="./assets/images/popup_sp_entry.webp" alt="エントリーはこちらから" width="336" height="35"></h2>
+					<ul>
+						<li><a href="https://job.mynavi.jp/26/pc/optqqQjvA/info.html?corpId=248206" target="_blank" rel="noopener noreferrer" aria-label="マイナビ2026へ移動"><img src="./assets/images/mynavi_2026_sp.webp" alt="マイナビ2026"></a></li>
+						<li><a href="https://job.rikunabi.com/2026/company/r556672054/" target="_blank" rel="noopener noreferrer" aria-label="リクナビ2026へ移動"><img src="./assets/images/recnavi_2026_sp.webp" alt="リクナビ2026"></a></li>
+						<li><a href="https://job.axol.jp/qd/s/haseko_26/entry/agreement" target="_blank" rel="noopener noreferrer" aria-label="いずれのIDもお持ちでない場合へ移動"><img src="./assets/images/noid_2026_sp.webp" alt="いずれのIDもお持ちでない方"></a></li>
+					</ul>
+					<ul>
+						<li><a href="https://job.mynavi.jp/27/pc/search/corp248206/is.html" target="_blank" rel="noopener noreferrer" aria-label="マイナビ2027へ移動"><img src="./assets/images/mynavi_2027_sp.webp" alt="マイナビ2027"></a></li>
+						<li><img src="./assets/images/recnavi_2027_sp.webp" alt="リクナビ2027"></li>
+						<li><img src="./assets/images/preparation_sp.webp" alt="準備中（2027年卒）"></li>
+					</ul>
+				</div>
+				<div class="mypage">
+					<h2><img src="./assets/images/popup_sp_mypage.webp" alt="マイページはこちらから" width="336" height="35"></h2>
+					<p>
+						会社説明会の予約は、<br>
+						マイページから受け付けています。
+					</p>
+					<ul>
+						<li><a href="https://job.axol.jp/qd/s/haseko_26/mypage/login" target="_blank" rel="noopener noreferrer" aria-label="2026年卒マイページにログインする"><img src="./assets/images/mypage_sp_2026.webp" alt="マイページにログイン（2026年卒）"></a></li>
+						<li><img src="./assets/images/mypage_sp_2027.webp" alt="マイページ準備中（2027年卒）"></li>
+					</ul>
+				</div>
+			</div>
+			<div class="closebtn" id="closebtn">
+				<button class="closebtn__trigger">
+					<span></span>
+					<span></span>
+					<span></span>
+				</button>
+			</div>
+		</div>
+		
+		<nav class="nav" id="nav">
+			<div class="nav__inner">
+				<div class="logo">
+					<a href="./" aria-label="トップへ移動">
+						<picture>
+							<source srcset="./assets/images/nav_logo.webp" media="(min-width:769px)">
+							<img src="./assets/images/logo_sp.webp" alt="長谷工コミュニティ九州 RECRUITING SITE">
+						</picture>
+					</a>
+				</div>
+				<div class="box">
+					<div class="list" id="nav__list">
+						<ul>
+							<li>
+								<a href="./company.php" aria-label="会社を知るページへ移動">
+									<dl>
+										<dt><img src="./assets/images/nav_company.svg" alt="会社を知る" width="80" height="80"></dt>
+										<dd>会社を知る</dd>
+									</dl>
+								</a>
+								<ul>
+									<li><a href="./company.php#lead" aria-label="会社を知るページの長谷工コミュニティ九州とはへ移動">長谷工コミュニティ九州とは</a></li>
+									<li><a href="./company.php#aboutgroup" aria-label="会社を知るページの長谷工グループとはへ移動">長谷工グループとは</a></li>
+									<li><a href="./company.php#outline" aria-label="会社を知るページの会社概要へ移動">会社概要</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="./works.php" aria-label="仕事を知るページへ移動">
+									<dl>
+										<dt><img src="./assets/images/nav_works.svg" alt="仕事を知る" width="80" height="80"></dt>
+										<dd>仕事を知る</dd>
+									</dl>
+								</a>
+								<ul>
+									<li><a href="./works.php#lead" aria-label="仕事を知るページのマンション管理業務とはへ移動">マンション管理業務とは</a></li>
+									<li><a href="./works.php#front" aria-label="仕事を知るページのフロント営業へ移動">フロント営業</a></li>
+									<li><a href="./works.php#facility" aria-label="仕事を知るページの施設管理へ移動">施設管理</a></li>
+									<li><a href="./works.php#accounting" aria-label="仕事を知るページの管理組合会計へ移動">管理組合会計</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="./person.php" aria-label="人を知るページへ移動">
+									<dl>
+										<dt><img src="./assets/images/nav_person.svg" alt="人を知る" width="80" height="80"></dt>
+										<dd>人を知る</dd>
+									</dl>
+								</a>
+								<ul>
+									<li><a href="./person.php#kh" aria-label="人を知るページのK.H（フロント営業）へ移動">K.H（フロント営業）</a></li>
+									<li><a href="./person.php#ha" aria-label="人を知るページのH.A（フロント営業）へ移動">H.A（フロント営業）</a></li>
+									<li><a href="./person.php#ka" aria-label="人を知るページのK.A（執行役員）へ移動">K.A（執行役員）</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#top" aria-label="制度を知るページへ移動">
+									<dl>
+										<dt><img src="./assets/images/nav_system.svg" alt="制度を知る" width="80" height="80"></dt>
+										<dd>制度を知る</dd>
+									</dl>
+								</a>
+								<ul>
+									<li><a href="#number" aria-label="制度を知るページの数字で見るへ移動">数字で見る</a></li>
+									<li><a href="#education" aria-label="制度を知るページの教育制度へ移動">教育制度</a></li>
+									<li><a href="#career" aria-label="制度を知るページのキャリア制度へ移動">キャリア制度</a></li>
+									<li><a href="#benefits" aria-label="制度を知るページの福利厚生へ移動">福利厚生</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="./recruit.php" aria-label="採用を知るページへ移動">
+									<dl>
+										<dt><img src="./assets/images/nav_recruit.svg" alt="採用を知る" width="80" height="80"></dt>
+										<dd>採用を知る</dd>
+									</dl>
+								</a>
+								<ul>
+									<li><a href="./recruit.php#lead" aria-label="採用を知るページの人事担当者よりへ移動">人事担当者より</a></li>
+									<li><a href="./recruit.php#flow" aria-label="採用を知るページの選考フローへ移動">選考フロー</a></li>
+									<li><a href="./recruit.php#application" aria-label="採用を知るページの募集要項へ移動">募集要項</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+					<div class="btn" id="nav__btn">
+						<ul>
+							<li><button data-id="mypage">マイページ</button></li>
+							<li><button data-id="entry">エントリー</button></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</nav>
+		
+		<main class="main fade">
+			
+			<div class="pg__header pg__header__system">
+				<h1>制度を知る</h1>
+			</div>
+			
+			<div class="pg system" id="system">
+				<div class="inner">
+				
+					<div class="side">
+						<div class="list">
+							<ul>
+								<li><a href="#number" aria-label="数字で見るへ移動">数字で見る</a></li>
+								<li class="has__sub">
+									<a href="#education" aria-label="教育制度へ移動">教育制度</a>
+									<ul>
+										<li><a href="#first" aria-label="1年目の教育体系へ移動">1年目の教育体系</a></li>
+										<li><a href="#college" aria-label="長谷工ビジネスカレッジへ移動">長谷工<br>ビジネスカレッジ</a></li>
+										<li><a href="#be3" aria-label="Be3制度へ移動">Be3制度</a></li>
+										<li><a href="#qualifications" aria-label="資格取得奨励へ移動">資格取得奨励</a></li>
+									</ul>
+								</li>
+								<li class="has__sub">
+									<a href="#career" aria-label="キャリア制度へ移動">キャリア制度</a>
+									<ul>
+										<li><a href="#cap10" aria-label="ＣＡＰ・10へ移動">ＣＡＰ・10</a></li>
+										<li><a href="#declaration" aria-label="自己申告制度へ移動">自己申告制度</a></li>
+									</ul>
+								</li>
+								<li class="has__sub">
+									<a href="#benefits" aria-label="福利厚生へ移動">福利厚生</a>
+									<ul>
+										<li><a href="#lifestage" aria-label="ライフステージに合った制度へ移動">ライフステージに<br>合った制度</a></li>
+										<li><a href="#leisure" aria-label="余暇活動の充実へ移動">余暇活動の充実</a></li>
+										<li><a href="#health" aria-label="健康管理へ移動">健康管理</a></li>
+										<li><a href="#money" aria-label="マネープランへ移動">マネープラン</a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+					
+					<div class="content">
+						
+						<section class="box" id="number">
+							<h2><img src="./assets/images/system_number.webp" alt="数字で見る" width="250" height="80"></h2>
+							<div class="list">
+								<ul>
+									<li>
+										<div class="img"><img src="./assets/images/system_number_1.webp" alt="新卒離職率" width="240" height="240"></div>
+										<div class="num" id="num1">0</div>
+									</li>
+									<li>
+										<div class="img"><img src="./assets/images/system_number_2.webp" alt="平均勤続年数" width="240" height="240"></div>
+										<div class="num" id="num2">9.3</div>
+									</li>
+									<li>
+										<div class="img"><img src="./assets/images/system_number_3.webp" alt="男女比" width="240" height="240"></div>
+										<div class="num" id="num3__1">67</div>
+										<div class="num" id="num3__2">33</div>
+									</li>
+									<li>
+										<div class="img"><img src="./assets/images/system_number_4.webp" alt="育児休業取得率" width="240" height="240"></div>
+										<div class="num" id="num4">33</div>
+									</li>
+									<li>
+										<div class="img"><img src="./assets/images/system_number_5.webp" alt="年間休日数" width="240" height="240"></div>
+										<div class="num" id="num5">120</div>
+									</li>
+									<li>
+										<div class="img"><img src="./assets/images/system_number_6.webp" alt="有給取得日数" width="240" height="240"></div>
+										<div class="num" id="num6">13.9</div>
+									</li>
+									<li>
+										<div class="img"><img src="./assets/images/system_number_7.webp" alt="管理受託戸数" width="240" height="240"></div>
+										<div class="num"></div>
+									</li>
+									<li>
+										<div class="img"><img src="./assets/images/system_number_8.webp" alt="管理業務主任者の保有率" width="240" height="240"></div>
+										<div class="num" id="num8">95</div>
+									</li>
+									<li><span>※2025年4月1日時点</span></li>
+								</ul>
+							</div>
+						</section>
+						
+						<section class="box fade" id="education">
+							<h2><img src="./assets/images/system_education.webp" alt="教育制度" width="220" height="80"></h2>
+							<div class="item" id="first">
+								<h3>1年目の教育体系</h3>
+								<p>1年間多くのバックアップからさまざまな研修、実務を通じて成長を促します。</p>
+								<div class="img">
+									<picture>
+										<source srcset="./assets/images/system_education_zu.webp" media="(min-width:769px)">
+										<img src="./assets/images/system_education_zu_sp.webp" alt="1年目の教育体系の図">
+									</picture>
+								</div>
+							</div>
+							<div class="item" id="college">
+								<h3>長谷工ビジネスカレッジ<br class="sp">（自己学習支援）</h3>
+								<p>能力の向上や将来に向けた知識･資格習得のため、 社員に自己啓発や通信教育の場を提供しています｡</p>
+							</div>
+							<div class="item" id="be3">
+								<div class="wrap">
+									<div class="txt">
+										<h3>Be3（ビーキューブ）制度</h3>
+										<p><span class="txt__green">❶ブラザー・シスター（BS）</span>と呼ばれる配属先の先輩社員、<span class="txt__orange">❷人事部門</span>、更に<span class="txt__blue">❸ネクスター（NX）</span>と呼ばれる他部署の次世代におけるリーダー候補の3方向から、3年間若手社員の成長をサポートします。</p>
+									</div>
+									<div class="img"><img src="./assets/images/system_education_be3.webp" alt=">Be3（ビーキューブ）制度の図" width="360" height="260"></div>
+								</div>
+							</div>
+							<div class="item" id="qualifications">
+								<h3>資格取得奨励</h3>
+								<p>資格取得に向けて手厚いサポートを行います。管理業務主任者・マンション管理士・マンション維持修繕技術者・宅地建物取引士など資格取得に必要な教材の付与や模擬試験を実施。最短で資格を取得できる環境を整えています。</p>
+							</div>
+						</section>
+						
+						<section class="box fade" id="career">
+							<h2><img src="./assets/images/system_career.webp" alt="キャリア制度" width="" height=""></h2>
+							<div class="item" id="cap10">
+								<h3>ＣＡＰ・10 （キャップテン）</h3>
+								<p>社員自らキャリアプランを策定、10年後、20年後の持続的なキャリアプランや成長を考える制度です｡</p>
+							</div>
+							<div class="item" id="declaration">
+								<h3>自己申告制度</h3>
+								<p>毎年、自分の仕事や職場の状況について整理し今後のキャリアや能力開発を考える機会があります。</p>
+								<div class="img"><img src="./assets/images/career_img.webp" alt="自己申告制度イメージ" width="762" height="284"></div>
+							</div>
+						</section>
+						
+						<section class="box fade" id="benefits">
+							<h2><img src="./assets/images/system_benefits.webp" alt="福利厚生" width="221" height="77"></h2>
+							<div class="item" id="lifestage">
+								<h3>ライフステージに合った制度</h3>
+								<p>長く安心して働き続けるため仕事とプライベートの両立を全力でサポートしています</p>
+								<div class="img"><img src="./assets/images/lifestage_ime.webp" alt="ライフステージに合った制度イメージ" width="716" height="494"></div>
+							</div>
+							<div class="item" id="leisure">
+								<h3>余暇活動の充実</h3>
+								<div class="leisure__list">
+									<div class="leisure__list__item">
+										<h4>優待割引</h4>
+										<p>(株)ベネフィット・ワンが提供する福利厚生サービスを利用し様々な割引を利用できます。</p>
+										<div class="wrap">
+											<ul>
+												<li>映画</li>
+												<li>レジャー</li>
+												<li>宿泊施設<br>(遊園地･ホテルなど)</li>
+											</ul>
+											<ul>
+												<li>飲食店</li>
+												<li>フィットネスクラブ</li>
+												<li>レンタカー</li>
+												<li>育児、介護</li>
+											</ul>
+										</div>
+										<div class="circle"><img src="./assets/images/circle.webp" alt="" width="324" height="324"></div>
+									</div>
+									<div class="leisure__list__item nomargin">
+										<h4>各種保養所</h4>
+										<p>全国各地の各種保養所が利用可能です。リゾートマンションや契約保養所も利用できます。</p>
+										<div class="wrap">
+											<div class="wrap__img__item"><img src="./assets/images/leisure_1.webp" alt="各種保養所のイメージ1" width="162" height="111"></div>
+											<div class="wrap__img__item"><img src="./assets/images/leisure_2.webp" alt="各種保養所のイメージ2" width="162" height="111"></div>
+										</div>
+										<div class="circle"><img src="./assets/images/circle.webp" alt="" width="324" height="324"></div>
+									</div>
+								</div>
+								<div class="img"><img src="./assets/images/leisure_3.webp" alt="余暇活動イメージ" width="762" height="284"></div>
+							</div>
+							<div class="item" id="health">
+								<h3>健康管理</h3>
+								<div class="dl">
+									<dl>
+										<dt>健康診断</dt>
+										<dd>生活習慣病検診、レディースドック・脳ドック・健康指導、予防接種 など健康づくりを手厚くサポートします。</dd>
+									</dl>
+									<dl>
+										<dt>PET検診</dt>
+										<dd>会社負担でがん検査の受診。早期発見が期待できます。※年齢条件有り</dd>
+									</dl>
+									<dl>
+										<dt>GLTD制度</dt>
+										<dd>万一働けなくなった時の一部収入補償制度です。</dd>
+									</dl>
+									<dl>
+										<dt>インフルエンザワクチン割引</dt>
+										<dd>インフルエンザ予防接種にかかった費用のうち、会社から一部補助をします。</dd>
+									</dl>
+									<dl>
+										<dt>禁煙セミナー</dt>
+										<dd>社員の健康づくりへの関心を高めるセミナーです。</dd>
+									</dl>
+								</div>
+							</div>
+							<div class="item" id="money">
+								<h3>マネープラン</h3>
+								<div class="ul">
+									<ul>
+										<li>財形貯蓄、積立貯蓄</li>
+										<li>従業員持株会</li>
+										<li>社内融資（子どもの養育費、学費、入院費など）<br class="pc">ライフイベントに応じた資金面の支援があります。</li>
+									</ul>
+								</div>
+							</div>
+						</section>
+						
+					</div>
+					
+				</div>
+			</div>
+
+		</main>
+		
+		<footer class="footer">
+			<div class="inner">
+				
+				<div class="head">
+					<a href="./" aria-label="ホームへ移動">
+						<picture>
+							<source srcset="./assets/images/logo.svg" media="(min-width:769px)">
+							<img src="./assets/images/logo_f_sp.webp" alt="長谷工コミュニティ九州">
+						</picture>
+					</a>
+				</div>
+				<nav class="fnav">
+					<div class="box">
+						<h3><a href="./company.php" aria-label="会社を知るページへ移動">会社を知る</a></h3>
+						<ul>
+							<li><a href="./company.php#lead" aria-label="会社を知るページの長谷工コミュニティ九州とはへ移動">長谷工コミュニティ九州とは</a></li>
+							<li><a href="./company.php#aboutgroup" aria-label="会社を知るページの長谷工グループとはへ移動">長谷工グループとは</a></li>
+							<li><a href="./company.php#outline" aria-label="会社を知るページの会社概要へ移動">会社概要</a></li>
+						</ul>
+					</div>
+					<div class="box">
+						<h3><a href="./works.php" aria-label="仕事を知るページへ移動">仕事を知る</a></h3>
+						<ul>
+							<li><a href="./works.php#lead" aria-label="仕事を知るページのマンション管理業務とはへ移動">マンション管理業務とは</a></li>
+							<li><a href="./works.php#front" aria-label="仕事を知るページのフロント営業へ移動">フロント営業</a></li>
+							<li><a href="./works.php#facility" aria-label="仕事を知るページの施設管理へ移動">施設管理</a></li>
+							<li><a href="./works.php#accounting" aria-label="仕事を知るページの管理組合会計へ移動">管理組合会計</a></li>
+						</ul>
+					</div>
+					<div class="box">
+						<h3><a href="./person.php" aria-label="人を知るページへ移動">人を知る</a></h3>
+						<ul>
+							<li><a href="./person.php#kh" aria-label="人を知るページのK.H（フロント営業）へ移動">K.H（フロント営業）</a></li>
+							<li><a href="./person.php#ha" aria-label="人を知るページのH.A（フロント営業）へ移動">H.A（フロント営業）</a></li>
+							<li><a href="./person.php#ka" aria-label="人を知るページのK.A（執行役員）へ移動">K.A（執行役員）</a></li>
+						</ul>
+					</div>
+					<div class="box">
+						<h3><a href="#topp" aria-label="制度を知るページへ移動">制度を知る</a></h3>
+						<ul>
+							<li><a href="#number" aria-label="制度を知るページの数字で見るへ移動">数字で見る</a></li>
+							<li><a href="#education" aria-label="制度を知るページの教育制度へ移動">教育制度</a></li>
+							<li><a href="#career" aria-label="制度を知るページのキャリア制度へ移動">キャリア制度</a></li>
+							<li><a href="#benefits" aria-label="制度を知るページの福利厚生へ移動">福利厚生</a></li>
+						</ul>
+					</div>
+					<div class="box">
+						<h3><a href="./recruit.php" aria-label="採用を知るページへ移動">採用を知る</a></h3>
+						<ul>
+							<li><a href="./recruit.php#lead" aria-label="採用を知るページの人事担当者よりへ移動">人事担当者より</a></li>
+							<li><a href="./recruit.php#flow" aria-label="採用を知るページの選考フローへ移動">選考フロー</a></li>
+							<li><a href="./recruit.php#application" aria-label="採用を知るページの募集要項へ移動">募集要項</a></li>
+						</ul>
+					</div>
+				</nav>
+				<div class="entries">
+					<h3>エントリーはこちらから</h3>
+					<ul>
+						<li><a href="https://job.mynavi.jp/26/pc/optqqQjvA/info.html?corpId=248206" target="_blank" rel="noopener noreferrer" aria-label="マイナビ2026へ移動"><img src="./assets/images/banner_mynavi_2026.webp" alt="マイナビ2026" width="293" height="92"></a></li>
+						<li><a href="https://job.rikunabi.com/2026/company/r556672054/" target="_blank" rel="noopener noreferrer" aria-label="リクナビ2026へ移動"><img src="./assets/images/banner_recnavi_2026.webp" alt="リクナビ2026" width="293" height="92"></a></li>
+						<li><a href="https://job.axol.jp/qd/s/haseko_26/entry/agreement" target="_blank" rel="noopener noreferrer" aria-label="いずれのIDもお持ちでない場合へ移動"><img src="./assets/images/banner_noid_2026.webp" alt="いずれのIDもお持ちでない方" width="293" height="92"></a></li>
+						<li><a href="https://job.mynavi.jp/27/pc/search/corp248206/is.html" target="_blank" rel="noopener noreferrer" aria-label="マイナビ2027へ移動"><img src="./assets/images/banner_mynavi_2027.webp" alt="マイナビ2027" width="293" height="92"></a></li>
+						<li><img src="./assets/images/banner_recnavi_preparation.webp" alt="準備中 リクナビIDをお持ちの方" width="293" height="92"></li>
+						<li><img src="./assets/images/banner_preparation.webp" alt="準備中（2027年卒）" width="293" height="92"></li>
+					</ul>
+				</div>
+				<div class="mypage">
+					<h3>マイページはこちらから</h3>
+					<p>会社説明会の予約は、マイページから受け付けています。</p>
+					<ul>
+						<li><a href="https://job.axol.jp/qd/s/haseko_26/mypage/login" target="_blank" rel="noopener noreferrer" aria-label="2026年卒マイページにログインする"><span>マイページにログイン（2026年卒）</span></a></li>
+						<li><a href="#" target="_blank" rel="noopener noreferrer" aria-label="2027年卒マイページにログインする" class="disabled"><span>マイページ準備中（2027年卒）</span></a></li>
+					</ul>
+				</div>
+				<div class="btns">
+					<ul>
+						<li><a href="https://www.haseko.co.jp/cmq/" target="_blank" rel="noopener noreferrer" aria-label="コーポレートサイトへ移動">コーポレートサイト</a></li>
+						<li><a href="https://www.haseko.co.jp/cmq/company/privacy" target="_blank" rel="noopener noreferrer" aria-label="個人情報保護方針へ移動">個人情報保護方針</a></li>
+						<li><a href="https://www.haseko.co.jp/cmq/contact" target="_blank" rel="noopener noreferrer" aria-label="お問い合わせ窓口へ移動">お問い合わせ窓口</a></li>
+					</ul>
+				</div>
+				<div class="copy">Copyright&copy; <a href="//www.haseko.co.jp/cmq/" target="_blank" rel="noopener noreferrer" aria-label="長谷工コミュニティ九州のウェブサイトへ移動">HASEKO COMMUNITY KYUSHU</a>. All rights reserved.</div>
+				
+			</div>
+		</footer>
+		
+		<div class="fbtn">
+			<button><img src="./assets/images/f_btn.webp" alt="ENTRY&MYPAGE"></button>
+		</div>
+		
+		<div class="fbtn">
+			<button><img src="./assets/images/f_btn.webp" alt="ENTRY&MYPAGE"></button>
+		</div>
+				
+		<script defer src="//ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<script defer src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+		<script defer src="./assets/js/script.js?<?= time() ?>"></script>
+		
+	</body>
+</html>

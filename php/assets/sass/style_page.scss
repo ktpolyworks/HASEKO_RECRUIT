@@ -1,0 +1,1460 @@
+@charset "utf-8";
+@import "_variable";
+
+/*-----------------------------------------------------*/
+// page
+/*-----------------------------------------------------*/
+
+.pg__header {
+	width: 100%;
+	@include myClampSpace("height", 120);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	h1 {
+		color: #fff;
+		margin: 0;
+		font-family: $font-serif;
+		@include fsClamp(32);
+		font-weight: 700;
+	}
+}
+.pg__header__system {
+	background: url(../images/system_header.webp) no-repeat center center;
+	background-size: cover;
+
+	h1 {
+		text-shadow: 0px 0px 15px #bc561e;
+	}
+}
+
+/*-----------------------------------------------------*/
+// system
+/*-----------------------------------------------------*/
+
+.pg.system {
+	@include myClampSpace("padding-top", 50);
+	@include myClampSpace("padding-left", 80);
+	@include myClampSpace("padding-right", 80);
+
+	.inner {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+
+	.side {
+		@include myClampSpace("width", 205);
+		@include myClampSpace("margin-right", 70);
+
+		.list {
+			@include myClampSpace("padding-left", 50);
+			position: sticky;
+			@include myClampSpace("top", 100);
+			@include myClampSpace("margin-bottom", 125);
+
+			> ul {
+				> li {
+					@include myClampSpace("margin-bottom", 20);
+
+					> a {
+						display: block;
+						@include fsClamp(16);
+						font-weight: 500;
+						text-decoration: none;
+						color: $color-key;
+						line-height: 1.4;
+						position: relative;
+
+						&::after {
+							opacity: 0;
+							content: "";
+							position: absolute;
+							top: 0;
+							@include myClampSpace("left", -54);
+							@include myClampSpace("width", 28);
+							@include myClampSpace("height", 24);
+							background: url(../images/side_mark.webp) no-repeat center center;
+							background-size: cover;
+							transition: 0.3s;
+						}
+
+						&:hover {
+							&::after {
+								opacity: 1;
+							}
+						}
+					}
+
+					&.has__sub {
+						> a {
+							padding-bottom: 4px;
+							border-bottom: 2px solid $color-key;
+						}
+					}
+
+					> ul {
+						@include myClampSpace("padding-left", 18);
+						@include myClampSpace("padding-top", 15);
+						@include myClampSpace("margin-bottom", 25);
+						> li {
+							@include myClampSpace("margin-bottom", 15);
+							> a {
+								display: block;
+								@include fsClamp(16);
+								font-weight: 500;
+								text-decoration: none;
+								color: $color-key;
+								line-height: 1.4;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.content {
+		flex: 1;
+	}
+
+	.box {
+		@include myClampSpace("margin-bottom", 50);
+
+		h2 {
+			@include myClampSpace("margin-bottom", 30);
+		}
+
+		.item {
+			@include myClampSpace("padding-bottom", 30);
+			@include myClampSpace("margin-bottom", 45);
+			border-bottom: 1px solid #4a73b8;
+
+			&:last-child {
+				border: none;
+			}
+
+			h3 {
+				color: #eb8c58;
+				@include fsClamp(24);
+				letter-spacing: 0.1em;
+				@include myClampSpace("margin-bottom", 30);
+			}
+
+			p {
+				@include fsClamp(16);
+				font-weight: 500;
+				line-height: 2;
+				@include myClampSpace("margin-bottom", 30);
+				color: $color-key;
+			}
+
+			.wrap {
+				display: flex;
+				justify-content: space-between;
+				flex-wrap: wrap;
+			}
+
+			.img {
+				@include myClampSpace("margin-bottom", 30);
+			}
+
+			.dl {
+				dl {
+					@include fsClamp(16);
+					font-weight: 500;
+					line-height: 2;
+					color: $color-key;
+					@include myClampSpace("margin-bottom", 30);
+
+					dt {
+						position: relative;
+						padding-left: 20px;
+
+						&::after {
+							content: "●";
+							position: absolute;
+							top: 0;
+							left: 0;
+						}
+					}
+					dd {
+					}
+				}
+			}
+			.ul {
+				ul {
+					@include myClampSpace("margin-bottom", 30);
+
+					li {
+						position: relative;
+						padding-left: 20px;
+						@include fsClamp(16);
+						font-weight: 500;
+						line-height: 2;
+						color: $color-key;
+
+						&::after {
+							content: "●";
+							position: absolute;
+							top: 0;
+							left: 0;
+						}
+					}
+				}
+			}
+		}
+
+		#be3 {
+			.txt {
+				width: 45%;
+			}
+			.img {
+				width: 50%;
+				margin-bottom: 0;
+			}
+		}
+
+		.txt__green {
+			color: #04a76e;
+		}
+		.txt__orange {
+			color: #eb8c58;
+		}
+		.txt__blue {
+			color: #3377ee;
+		}
+	}
+
+	#number {
+		h2 {
+			@include myClampSpace("width", 250);
+		}
+		.list {
+			ul {
+				display: flex;
+				justify-content: space-between;
+				flex-wrap: wrap;
+
+				&::after {
+					content: "";
+					display: block;
+					width: 31.5%;
+				}
+
+				li {
+					width: 31.5%;
+					margin-bottom: 3%;
+					position: relative;
+					filter: drop-shadow(0px 2px 8px rgba(0, 0, 0, 0.2));
+					display: flex;
+					flex-direction: column;
+
+					.num {
+						position: absolute;
+						font-family: $font-oswald;
+						color: $color-key;
+						line-height: 1;
+						@include fsClamp(46);
+						font-weight: 500;
+						text-align: right;
+					}
+					#num1 {
+						bottom: 5.5%;
+						right: 49.5%;
+					}
+					#num2 {
+						bottom: 5.5%;
+						right: 43.5%;
+					}
+					#num3__1 {
+						bottom: 5.5%;
+						right: 65%;
+					}
+					#num3__2 {
+						bottom: 5.5%;
+						right: 23.5%;
+					}
+					#num4 {
+						bottom: 5.5%;
+						right: 66.5%;
+					}
+					#num5 {
+						bottom: 5.5%;
+						right: 42.5%;
+					}
+					#num6 {
+						bottom: 13%;
+						right: 22.5%;
+					}
+					#num7 {
+					}
+					#num8 {
+						bottom: 5.5%;
+						right: 26.5%;
+					}
+
+					span {
+						@include fsClamp(14);
+						color: $color-key;
+						margin-top: auto;
+					}
+				}
+			}
+		}
+	}
+	#education {
+		h2 {
+			@include myClampSpace("width", 220);
+		}
+	}
+	#career {
+		h2 {
+			@include myClampSpace("width", 242);
+		}
+		.img {
+			@include myClampSpace("padding-top", 25);
+		}
+	}
+	#benefits {
+		margin-bottom: 0;
+		h2 {
+			@include myClampSpace("width", 221);
+		}
+
+		.item {
+			@include myClampSpace("padding-bottom", 20);
+			@include myClampSpace("margin-bottom", 20);
+			border-bottom: none;
+		}
+
+		#leisure {
+			.leisure__list {
+				display: flex;
+				justify-content: space-between;
+				flex-wrap: wrap;
+				@include myClampSpace("margin-top", 50);
+				@include myClampSpace("margin-bottom", 120);
+
+				.leisure__list__item {
+					width: 48%;
+					position: relative;
+
+					.circle {
+						position: absolute;
+						top: -10%;
+						left: 2.5%;
+						width: 95%;
+						z-index: -1;
+					}
+
+					h4 {
+						color: $color-key;
+						@include fsClamp(20);
+						font-weight: 600;
+						letter-spacing: 0.1em;
+						@include myClampSpace("margin-bottom", 10);
+					}
+					p {
+						@include myClampSpace("margin-bottom", 15);
+					}
+					.wrap {
+						display: flex;
+						justify-content: space-between;
+						flex-wrap: wrap;
+
+						ul {
+							width: 50%;
+							padding-left: 20px;
+
+							li {
+								list-style: disc;
+								color: $color-key;
+								line-height: 2;
+								font-weight: 500;
+								@include fsClamp(15);
+							}
+						}
+					}
+					.wrap__img__item {
+						width: 48%;
+					}
+				}
+			}
+		}
+	}
+}
+
+/*-----------------------------------------------------*/
+// company
+/*-----------------------------------------------------*/
+
+.pg.company {
+	.head {
+		@include myClampSpace("padding-top", 70);
+		@include myClampSpace("padding-bottom", 40);
+
+		h1 {
+			@include myClampSpace("width", 330);
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+
+	.lead {
+		@include myClampSpace("margin-bottom", 70);
+		@include myClampSpace("padding-left", 80);
+		@include myClampSpace("padding-right", 80);
+
+		.wrap {
+			display: flex;
+			justify-content: space-between;
+			flex-wrap: wrap;
+			align-items: center;
+		}
+		.txt {
+			width: 60%;
+
+			h2 {
+				color: $color-key;
+				@include fsClamp(32);
+				font-weight: 600;
+				@include myClampSpace("margin-bottom", 30);
+			}
+
+			p {
+				color: $color-key;
+				@include fsClamp(16);
+				line-height: 2;
+				text-align: justify;
+				text-justify: inter-ideograph;
+			}
+		}
+		.img {
+			width: 34%;
+		}
+	}
+
+	.aboutgroup {
+		@include myClampSpace("margin-bottom", 70);
+		@include myClampSpace("padding-left", 80);
+		@include myClampSpace("padding-right", 80);
+
+		h2 {
+			@include myClampSpace("width", 316);
+			@include myClampSpace("margin-bottom", 30);
+
+			a {
+				display: block;
+
+				&:hover {
+					opacity: 0.6;
+				}
+			}
+		}
+
+		.wrap {
+			display: flex;
+			justify-content: space-between;
+			flex-wrap: wrap;
+			align-items: center;
+			@include myClampSpace("margin-bottom", 60);
+
+			.txt {
+				width: 60%;
+				color: $color-key;
+				@include fsClamp(16);
+				line-height: 2;
+				text-align: justify;
+				text-justify: inter-ideograph;
+			}
+			.img {
+				width: 34.5%;
+			}
+		}
+
+		.zu {
+			@include myClampSpace("width", 833);
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+
+	.outline {
+		@include myClampSpace("padding-left", 80);
+		@include myClampSpace("padding-right", 80);
+
+		h2 {
+			@include fsClamp(32);
+			color: $color-key;
+			font-weight: 600;
+			@include myClampSpace("margin-bottom", 30);
+		}
+
+		.table {
+			table {
+				border-collapse: collapse;
+				width: 100%;
+				border-top: 1px solid #000;
+				border-bottom: 1px solid #000;
+
+				tr {
+					&:last-child {
+						th,
+						td {
+							border: none;
+						}
+					}
+				}
+
+				th,
+				td {
+					text-align: left;
+					@include fsClamp(16);
+					color: $color-key;
+					font-weight: 400;
+					border-bottom: 1px solid #cbcbcb;
+					padding: 2px 20px;
+					line-height: 1.9;
+					vertical-align: top;
+				}
+				th {
+					font-weight: 500;
+					background: #f2f2f2;
+					@include myClampSpace("width", 150);
+				}
+				td {
+				}
+			}
+		}
+	}
+
+	#aboutgroup__zu {
+		position: relative;
+		width: 100%;
+
+		.circle {
+			position: absolute;
+			width: 40%;
+			top: calc(39 / 746 * 100%);
+			left: calc(965 / 1667 * 100%);
+			animation: rotateClockwise 30s linear infinite;
+			transform-origin: center center;
+
+			.circle__inner {
+				position: relative;
+				width: 100%;
+
+				.circle__item {
+					position: absolute;
+					width: 28.2934131737%;
+					animation: rotateClockwiseR 30s linear infinite;
+					transform-origin: center center;
+				}
+				#c1 {
+					left: calc(236 / 668 * 100%);
+					top: calc(-5 / 668 * 100%);
+				}
+				#c2 {
+					left: calc(394 / 668 * 100%);
+					top: calc(46 / 668 * 100%);
+				}
+				#c3 {
+					left: calc(480 / 668 * 100%);
+					top: calc(189 / 668 * 100%);
+				}
+				#c4 {
+					left: calc(452 / 668 * 100%);
+					top: calc(352 / 668 * 100%);
+				}
+				#c5 {
+					left: calc(326 / 668 * 100%);
+					top: calc(463 / 668 * 100%);
+				}
+				#c6 {
+					left: calc(153 / 668 * 100%);
+					top: calc(463 / 668 * 100%);
+				}
+				#c7 {
+					left: calc(30 / 668 * 100%);
+					top: calc(352 / 668 * 100%);
+				}
+				#c8 {
+					left: 0;
+					top: calc(190 / 668 * 100%);
+				}
+				#c9 {
+					left: calc(80 / 668 * 100%);
+					top: calc(46 / 668 * 100%);
+				}
+			}
+		}
+	}
+	@keyframes rotateClockwise {
+		from {
+			transform: rotate(0deg);
+		}
+		to {
+			transform: rotate(360deg);
+		}
+	}
+	@keyframes rotateClockwiseR {
+		from {
+			transform: rotate(0deg);
+		}
+		to {
+			transform: rotate(-360deg);
+		}
+	}
+}
+
+/*-----------------------------------------------------*/
+// works
+/*-----------------------------------------------------*/
+
+.pg.works {
+	.head {
+		@include myClampSpace("padding-top", 70);
+		@include myClampSpace("padding-bottom", 80);
+
+		h1 {
+			@include myClampSpace("width", 330);
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+
+	.lead {
+		@include myClampSpace("margin-bottom", 70);
+		@include myClampSpace("padding-left", 80);
+		@include myClampSpace("padding-right", 80);
+
+		h2 {
+			color: $color-key;
+			@include fsClamp(36);
+			font-weight: 600;
+			@include myClampSpace("margin-bottom", 30);
+			text-align: center;
+		}
+
+		p {
+			@include myClampSpace("width", 755);
+			margin-left: auto;
+			margin-right: auto;
+			color: $color-key;
+			@include fsClamp(16);
+			line-height: 2;
+			text-align: justify;
+			text-justify: inter-ideograph;
+		}
+	}
+
+	.image {
+		@include myClampSpace("padding-left", 80);
+		@include myClampSpace("padding-right", 80);
+		@include myClampSpace("margin-bottom", 40);
+
+		.box {
+			@include myClampSpace("width", 820);
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		.box__2 {
+			@include myClampSpace("margin-top", -25);
+		}
+	}
+	.works__image__fade {
+		.box {
+			transform: translateY(50px);
+			opacity: 0;
+			transition: 1s;
+		}
+		.box.on {
+			transform: translateY(0);
+			opacity: 1;
+		}
+	}
+
+	.business {
+		@include myClampSpace("padding-left", 80);
+		@include myClampSpace("padding-right", 80);
+
+		.inner {
+			max-width: 950px;
+		}
+
+		h2 {
+			color: $color-key;
+			@include fsClamp(36);
+			font-weight: 600;
+			@include myClampSpace("margin-bottom", 25);
+		}
+
+		.box {
+			background: linear-gradient(0deg, rgba(118, 197, 171, 0.2) 0%, rgba(39, 185, 237, 0.2) 100%);
+			@include myClampSpace("padding-top", 70);
+			@include myClampSpace("padding-left", 45);
+			@include myClampSpace("padding-right", 45);
+
+			ul {
+				li {
+					@include myClampSpace("padding-bottom", 70);
+					display: flex;
+					justify-content: space-between;
+					flex-wrap: wrap;
+
+					.txt {
+						width: 49%;
+
+						h3 {
+							@include myClampSpace("margin-bottom", 20);
+
+							span {
+								margin-bottom: 3px;
+								display: inline-block;
+								@include fsClamp(20);
+								font-weight: 600;
+								color: #fff;
+								background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), #4a73b8;
+								padding: 3px 15px;
+								letter-spacing: 0.05em;
+							}
+						}
+
+						p {
+							color: $color-key;
+							@include fsClamp(16);
+							line-height: 2;
+							text-align: justify;
+							text-justify: inter-ideograph;
+						}
+					}
+					.img {
+						width: 46%;
+					}
+				}
+			}
+		}
+	}
+}
+
+/*-----------------------------------------------------*/
+// recruit
+/*-----------------------------------------------------*/
+
+.pg.recruit {
+	.head {
+		@include myClampSpace("padding-top", 70);
+		@include myClampSpace("padding-bottom", 80);
+
+		h1 {
+			@include myClampSpace("width", 330);
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+
+	.lead {
+		@include myClampSpace("margin-bottom", 120);
+		@include myClampSpace("padding-left", 80);
+		@include myClampSpace("padding-right", 80);
+
+		.inner {
+			max-width: 1040px;
+		}
+
+		h2 {
+			color: $color-key;
+			@include fsClamp(36);
+			font-weight: 600;
+			@include myClampSpace("margin-bottom", 30);
+		}
+
+		.img {
+			@include myClampSpace("margin-bottom", 65);
+		}
+
+		.box {
+			text-align: center;
+
+			.txt {
+				display: inline-block;
+				text-align: left;
+
+				h3 {
+					@include fsClamp(32);
+					font-family: $font-serif;
+					color: $color-key;
+					font-weight: 400;
+					letter-spacing: 0.03em;
+					@include myClampSpace("margin-bottom", 35);
+				}
+
+				p {
+					color: $color-key;
+					@include fsClamp(16);
+					line-height: 2;
+					text-align: justify;
+					text-justify: inter-ideograph;
+				}
+			}
+		}
+	}
+
+	.flow {
+		@include myClampSpace("padding-top", 100);
+		@include myClampSpace("padding-bottom", 60);
+		@include myClampSpace("padding-left", 80);
+		@include myClampSpace("padding-right", 80);
+		background: linear-gradient(0deg, rgba(118, 197, 171, 0.2) 0%, rgba(39, 185, 237, 0.2) 100%);
+
+		.inner {
+			max-width: 1040px;
+		}
+
+		h2 {
+			color: $color-key;
+			@include fsClamp(32);
+			font-weight: 600;
+			@include myClampSpace("margin-bottom", 50);
+		}
+
+		.list {
+			@include myClampSpace("padding-left", 50);
+			@include myClampSpace("padding-right", 50);
+
+			ul {
+				li {
+					background: #ffffff;
+					box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
+					border-radius: 30px;
+					@include myClampSpace("margin-bottom", 70);
+					display: flex;
+					justify-content: space-between;
+					flex-wrap: wrap;
+					align-items: center;
+					@include myClampSpace("padding-top", 36);
+					@include myClampSpace("padding-bottom", 36);
+					@include myClampSpace("padding-left", 46);
+					@include myClampSpace("padding-right", 46);
+					position: relative;
+
+					&::after {
+						content: "";
+						position: absolute;
+						bottom: -19%;
+						left: 50%;
+						transform: translate(-50%, 0);
+						@include myClampSpace("width", 60);
+						@include myClampSpace("height", 40);
+						background: url(../images/flow_y.webp) no-repeat center center;
+						background-size: 100%;
+					}
+
+					&:last-child {
+						&::after {
+							content: none;
+						}
+					}
+
+					.img {
+						width: 34%;
+					}
+					.txt {
+						width: 61%;
+
+						h3 {
+							@include myClampSpace("margin-bottom", 20);
+							span {
+								@include myClampSpace("width", 180);
+								display: inline-block;
+								background: linear-gradient(0deg, #76c5ab 0%, #27b9ed 100%);
+								border-radius: 100vh;
+								padding: 5px;
+								text-align: center;
+								color: #fff;
+								@include fsClamp(20);
+								font-weight: 500;
+							}
+						}
+
+						p {
+							color: $color-key;
+							@include fsClamp(16);
+							letter-spacing: 0.05em;
+							font-weight: 500;
+							line-height: 2;
+							text-align: justify;
+							text-justify: inter-ideograph;
+
+							button {
+								@include fsClamp(16);
+								color: $color-key;
+								text-decoration: underline;
+								appearance: none;
+								-webkit-appearance: none;
+								-moz-appearance: none;
+								-o-appearance: none;
+								border: none;
+								cursor: pointer;
+								transition: 0.3s;
+								background: none;
+
+								&:hover {
+									opacity: 0.6;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.application {
+		@include myClampSpace("padding-top", 100);
+		@include myClampSpace("padding-bottom", 120);
+		@include myClampSpace("padding-left", 80);
+		@include myClampSpace("padding-right", 80);
+
+		.inner {
+			max-width: 1040px;
+		}
+
+		h2 {
+			color: $color-key;
+			@include fsClamp(32);
+			letter-spacing: 0.05em;
+			font-weight: 600;
+		}
+
+		.note {
+			color: $color-key;
+			text-align: right;
+			@include fsClamp(16);
+			@include myClampSpace("margin-bottom", 20);
+		}
+
+		.table {
+			@include myClampSpace("margin-bottom", 65);
+			table {
+				border-collapse: collapse;
+				width: 100%;
+				border-top: 1px solid #000;
+				border-bottom: 1px solid #000;
+
+				tr {
+					&:last-child {
+						th,
+						td {
+							border: none;
+						}
+					}
+				}
+
+				th,
+				td {
+					text-align: left;
+					@include fsClamp(16);
+					color: $color-key;
+					font-weight: 400;
+					border-bottom: 1px solid #cbcbcb;
+					line-height: 1.7;
+					vertical-align: top;
+				}
+				th {
+					font-weight: 500;
+					background: #f2f2f2;
+					@include myClampSpace("width", 160);
+					letter-spacing: 0.05em;
+					padding: 20px 20px;
+				}
+				td {
+					padding: 20px 25px;
+				}
+			}
+		}
+
+		.ask {
+			text-align: center;
+
+			.box {
+				display: inline-block;
+				border: 2px solid $color-key;
+				padding: 15px 30px;
+
+				.wrap {
+					display: flex;
+					justify-content: center;
+					align-items: center;
+				}
+			}
+
+			h3 {
+				color: $color-key;
+				@include fsClamp(20);
+				letter-spacing: 0.05em;
+				font-weight: 600;
+			}
+
+			dl {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				margin-left: 15px;
+
+				dt {
+					margin-right: 5px;
+					@include myClampSpace("width", 30);
+				}
+				dd {
+					a {
+						text-decoration: none;
+						color: $color-key;
+						@include fsClamp(20);
+						letter-spacing: 0.05em;
+						font-weight: 600;
+
+						&:hover {
+							opacity: 0.6;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.recruit__entries {
+		@include myClampSpace("padding-top", 90);
+		@include myClampSpace("padding-bottom", 90);
+		@include myClampSpace("padding-left", 80);
+		@include myClampSpace("padding-right", 80);
+		background: linear-gradient(0deg, #76c5ab 0%, #27b9ed 100%);
+
+		.entries {
+			@include myClampSpace("margin-bottom", 40);
+			h3 {
+				letter-spacing: 0.05em;
+				@include fsClamp(24);
+				font-weight: 600;
+				@include myClampSpace("margin-bottom", 30);
+			}
+			ul {
+				display: flex;
+				justify-content: space-between;
+				flex-wrap: wrap;
+
+				li {
+					width: 32%;
+					margin-bottom: 2%;
+
+					a {
+						display: block;
+
+						&:hover {
+							opacity: 0.6;
+						}
+					}
+				}
+			}
+		}
+
+		.mypage {
+			h3 {
+				letter-spacing: 0.05em;
+				@include fsClamp(24);
+				font-weight: 600;
+				@include myClampSpace("margin-bottom", 20);
+			}
+
+			p {
+				@include fsClamp(16);
+				font-weight: 500;
+				@include myClampSpace("margin-bottom", 30);
+			}
+
+			ul {
+				display: flex;
+
+				li {
+					@include myClampSpace("margin-right", 15);
+
+					a {
+						display: inline-block;
+						background: #3377ee;
+						color: #fff;
+						text-decoration: none;
+						font-weight: 500;
+						border-radius: 10px;
+						padding: 15px 35px 17px 35px;
+
+						span {
+							display: inline-block;
+							@include fsClamp(14);
+							padding-right: 15px;
+							background: url(../images/icon_link_w.svg) no-repeat right center;
+							background-size: 15px;
+						}
+
+						&.disabled {
+							cursor: default;
+							span {
+								opacity: 0.5;
+							}
+							&:hover {
+								opacity: 1;
+							}
+						}
+
+						&:hover {
+							opacity: 0.6;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+/*-----------------------------------------------------*/
+// person
+/*-----------------------------------------------------*/
+
+.pg.person {
+	.head {
+		@include myClampSpace("padding-top", 40);
+		@include myClampSpace("padding-bottom", 80);
+
+		h1 {
+			@include myClampSpace("width", 270);
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+
+	.tabs {
+		@include myClampSpace("margin-bottom", 70);
+		@include myClampSpace("padding-left", 80);
+		@include myClampSpace("padding-right", 80);
+
+		.inner {
+			//max-width: 860px;
+			max-width: 731px;
+		}
+
+		.list {
+			ul {
+				display: flex;
+				justify-content: space-between;
+				flex-wrap: wrap;
+
+				li {
+					width: 29%;
+
+					a {
+						display: block;
+						width: 100%;
+						height: 100%;
+						position: relative;
+						text-decoration: none;
+						overflow: hidden;
+
+						.img {
+							transition: 0.3s;
+						}
+
+						&:hover {
+							opacity: 0.8;
+
+							.img {
+								transform: scale(1.1);
+							}
+						}
+					}
+
+					.box {
+						position: absolute;
+						@include myClampSpace("bottom", 13);
+						@include myClampSpace("left", 15);
+						z-index: 10;
+
+						.txt {
+							color: #fff;
+							//@include fsClamp(20);
+							@include fsClamp(17);
+							line-height: 1.3;
+							font-weight: 600;
+							@include myClampSpace("margin-bottom", 10);
+							letter-spacing: 0.05em;
+						}
+						.name {
+							color: #fff;
+
+							dl {
+								dt {
+									//@include fsClamp(16);
+									@include fsClamp(13.6);
+									line-height: 1;
+									@include myClampSpace("margin-bottom", 5);
+								}
+								dd {
+									//@include fsClamp(32);
+									@include fsClamp(27.2);
+									line-height: 1;
+									font-weight: 600;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.interview {
+		@include myClampSpace("padding-left", 80);
+		@include myClampSpace("padding-right", 80);
+
+		.inner {
+			max-width: 1040px;
+		}
+
+		.visual {
+			@include myClampSpace("margin-bottom", 50);
+		}
+
+		h2 {
+			text-align: center;
+			color: $color-key;
+			@include fsClamp(36);
+			letter-spacing: 0.05em;
+			font-weight: 600;
+			font-family: $font-serif;
+			@include myClampSpace("margin-bottom", 50);
+		}
+
+		.name {
+			text-align: right;
+			@include myClampSpace("margin-bottom", 130);
+
+			dl {
+				text-align: left;
+				display: inline-block;
+				border-left: 2px solid $color-key;
+				@include myClampSpace("padding-left", 20);
+				@include myClampSpace("padding-right", 70);
+				color: $color-key;
+
+				dt {
+					@include fsClamp(24);
+					line-height: 1;
+					@include myClampSpace("margin-bottom", 10);
+				}
+				dd {
+					@include fsClamp(16);
+					@include myClampSpace("margin-bottom", 10);
+					line-height: 1;
+
+					&:last-child {
+						margin-bottom: 0;
+					}
+				}
+			}
+		}
+
+		.box {
+			display: flex;
+			justify-content: space-between;
+			flex-wrap: wrap;
+
+			.img {
+				width: 48%;
+
+				.movpic {
+					position: sticky;
+					@include myClampSpace("top", 80);
+					@include myClampSpace("margin-bottom", 100);
+				}
+			}
+			.txt {
+				width: 46%;
+
+				h3 {
+					@include fsClamp(24);
+					line-height: 1.6;
+					letter-spacing: 0.05em;
+					color: $color-key;
+					font-weight: 600;
+					font-family: $font-serif;
+					@include myClampSpace("margin-bottom", 20);
+				}
+
+				p {
+					color: $color-key;
+					@include fsClamp(16);
+					line-height: 2;
+					@include myClampSpace("margin-bottom", 100);
+					text-align: justify;
+					text-justify: inter-ideograph;
+				}
+			}
+		}
+		.box__r {
+			flex-direction: row-reverse;
+		}
+
+		.message {
+			@include myClampSpace("margin-bottom", 130);
+			width: 100%;
+			margin-left: auto;
+			margin-right: auto;
+			background: linear-gradient(0deg, #76c5ab 0%, #27b9ed 100%);
+			padding: 10px;
+			border-radius: 100vh;
+
+			.message__inner {
+				background: #fff;
+				border-radius: 100vh;
+				@include myClampSpace("padding-top", 45);
+				@include myClampSpace("padding-bottom", 45);
+
+				h3 {
+					text-align: center;
+					letter-spacing: 0.1em;
+					@include fsClamp(24);
+					font-weight: 600;
+					color: $color-key;
+					@include myClampSpace("margin-bottom", 30);
+				}
+			}
+		}
+	}
+
+	.schedule {
+		@include myClampSpace("margin-bottom", 170);
+		@include myClampSpace("padding-top", 35);
+		@include myClampSpace("padding-bottom", 50);
+		background: linear-gradient(0deg, #76c5ab 0%, #27b9ed 100%);
+
+		h2 {
+			color: #fff;
+			background: url(../images/schedule.webp) no-repeat left center;
+			background-size: 46px;
+			padding: 5px 0 5px 55px;
+			@include fsClamp(24);
+			font-weight: 600;
+			margin-left: 50px;
+			@include myClampSpace("margin-bottom", 20);
+		}
+
+		ul {
+			li {
+				background: #fff;
+				padding: 17px;
+
+				&:empty {
+					//background: none;
+					background: linear-gradient(to right, white, transparent);
+				}
+
+				.time {
+					@include fsClamp(16);
+					line-height: 1.2;
+					font-weight: 500;
+					color: $color-key;
+				}
+				h3 {
+					@include fsClamp(16);
+					font-weight: 500;
+					margin-bottom: 5px;
+					color: $color-key;
+				}
+				p {
+					@include fsClamp(13);
+					line-height: 1.8;
+					color: $color-key;
+					text-align: justify;
+					text-justify: inter-ideograph;
+				}
+			}
+		}
+
+		.schedule__slider {
+			.slick-arrow {
+				position: absolute;
+				top: -65px;
+				// width: 39px;
+				// height: 39px;
+				width: 35px;
+				height: 35px;
+				appearance: none;
+				-webkit-appearance: none;
+				-moz-appearance: none;
+				-o-appearance: none;
+				border: none;
+				cursor: pointer;
+				transition: 0.3s;
+				background: none;
+				text-indent: -5000px;
+			}
+			.slick-prev {
+				background: url(../images/prev.webp) no-repeat center center;
+				background-size: cover;
+				right: 105px;
+			}
+			.slick-next {
+				background: url(../images/next.webp) no-repeat center center;
+				background-size: cover;
+				right: 50px;
+			}
+
+			.slick-list {
+				padding-left: 50px;
+				box-sizing: border-box;
+			}
+
+			.slick-slide {
+				width: 285px;
+				height: 150px;
+				margin-right: 20px;
+			}
+		}
+	}
+	#kh {
+		.message {
+			.txt {
+				@include myClampSpace("width", 694);
+				margin: 0 auto;
+			}
+		}
+	}
+	#ha {
+		.message {
+			.txt {
+				@include myClampSpace("width", 893);
+				margin: 0 auto;
+			}
+		}
+	}
+	#ka {
+		.message {
+			.txt {
+				@include myClampSpace("width", 469);
+				margin: 0 auto;
+			}
+		}
+		.schedule {
+			@include myClampSpace("margin-bottom", 50);
+		}
+	}
+}
+
+/*-----------------------------------------------------*/
+// Smartphone
+/*-----------------------------------------------------*/
+
+@media only screen and (max-width: 769px) {
+	@import "_sp_page";
+}

@@ -1,0 +1,788 @@
+/*-----------------------------------------------------*/
+// page
+/*-----------------------------------------------------*/
+
+.pg__header {
+	@include myClampSpaceSp("height", 60);
+
+	h1 {
+		@include fsClampSp(20);
+	}
+}
+.pg__header__system {
+	background: url(../images/system_header.webp) no-repeat center center;
+	background-size: cover;
+}
+
+/*-----------------------------------------------------*/
+// system
+/*-----------------------------------------------------*/
+
+.pg.system {
+	@include myClampSpaceSp("padding-top", 40);
+	@include myClampSpaceSp("padding-left", 20);
+	@include myClampSpaceSp("padding-right", 20);
+
+	.side {
+		display: none;
+	}
+
+	.content {
+		flex: none;
+		width: 100%;
+	}
+
+	.box {
+		margin-bottom: 0;
+
+		h2 {
+			@include myClampSpaceSp("margin-bottom", 30);
+		}
+
+		.item {
+			@include myClampSpaceSp("padding-bottom", 10);
+			@include myClampSpaceSp("margin-bottom", 25);
+
+			h3 {
+				@include fsClampSp(20);
+				@include myClampSpaceSp("margin-bottom", 10);
+			}
+
+			p {
+				@include fsClampSp(14);
+				@include myClampSpaceSp("margin-bottom", 25);
+			}
+
+			.img {
+				@include myClampSpaceSp("margin-bottom", 20);
+			}
+
+			.dl {
+				dl {
+					@include fsClampSp(15);
+					line-height: 2;
+					@include myClampSpaceSp("margin-bottom", 20);
+
+					dt {
+						position: relative;
+						padding-left: 20px;
+					}
+				}
+			}
+			.ul {
+				ul {
+					margin-bottom: 0;
+
+					li {
+						@include fsClampSp(15);
+					}
+				}
+			}
+		}
+
+		#be3 {
+			.txt {
+				width: 100%;
+			}
+			.img {
+				width: 100%;
+				@include myClampSpaceSp("margin-bottom", 20);
+			}
+		}
+	}
+
+	#number {
+		@include myClampSpaceSp("margin-bottom", 50);
+		h2 {
+			@include myClampSpaceSp("width", 172);
+			margin-left: auto;
+			margin-right: auto;
+		}
+		.list {
+			width: 70%;
+			margin: 0 auto;
+
+			ul {
+				li {
+					width: 100%;
+					margin-bottom: 10%;
+
+					.num {
+						@include fsClampSp(46);
+					}
+
+					span {
+						width: 100%;
+						text-align: center;
+						@include fsClampSp(16);
+					}
+				}
+			}
+		}
+	}
+	#education {
+		h2 {
+			@include myClampSpaceSp("width", 170);
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+	#career {
+		h2 {
+			@include myClampSpaceSp("width", 190);
+			margin-left: auto;
+			margin-right: auto;
+		}
+		.img {
+			padding-top: 0;
+			width: 102vw;
+			@include myClampSpaceSp("margin-left", -28);
+		}
+	}
+	#benefits {
+		margin-bottom: 0;
+		h2 {
+			@include myClampSpaceSp("width", 175);
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		.item {
+			@include myClampSpaceSp("padding-bottom", 20);
+			@include myClampSpaceSp("margin-bottom", 20);
+		}
+
+		#leisure {
+			.leisure__list {
+				@include myClampSpaceSp("margin-top", 70);
+				@include myClampSpaceSp("margin-bottom", 120);
+
+				.leisure__list__item {
+					@include myClampSpaceSp("margin-bottom", 120);
+					width: 100%;
+
+					.circle {
+						top: -20%;
+						left: 2.5%;
+						width: 95%;
+					}
+
+					h4 {
+						@include fsClampSp(20);
+						letter-spacing: 0.1em;
+						@include myClampSpaceSp("margin-bottom", 10);
+					}
+					p {
+						@include myClampSpaceSp("margin-bottom", 15);
+					}
+					.wrap {
+						ul {
+							width: 50%;
+							padding-left: 20px;
+
+							li {
+								line-height: 2;
+								@include fsClampSp(15);
+							}
+						}
+					}
+					.wrap__img__item {
+						width: 48%;
+					}
+				}
+
+				.nomargin {
+					margin-bottom: 0;
+				}
+			}
+
+			.img {
+				width: 102vw;
+				@include myClampSpaceSp("margin-left", -28);
+			}
+		}
+	}
+}
+
+/*-----------------------------------------------------*/
+// company
+/*-----------------------------------------------------*/
+
+.pg.company {
+	.head {
+		@include myClampSpaceSp("padding-top", 50);
+		@include myClampSpaceSp("padding-bottom", 40);
+
+		h1 {
+			@include myClampSpaceSp("width", 172);
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+
+	.lead {
+		@include myClampSpaceSp("margin-bottom", 50);
+		@include myClampSpaceSp("padding-left", 20);
+		@include myClampSpaceSp("padding-right", 20);
+
+		.txt {
+			width: 100%;
+			@include myClampSpaceSp("margin-bottom", 20);
+
+			h2 {
+				@include fsClampSp(20);
+				@include myClampSpaceSp("margin-bottom", 20);
+			}
+
+			p {
+				@include fsClampSp(14);
+			}
+		}
+		.img {
+			width: 100%;
+		}
+	}
+
+	.aboutgroup {
+		@include myClampSpaceSp("margin-bottom", 50);
+		@include myClampSpaceSp("padding-left", 20);
+		@include myClampSpaceSp("padding-right", 20);
+
+		h2 {
+			@include myClampSpaceSp("width", 286);
+			@include myClampSpaceSp("margin-bottom", 20);
+		}
+
+		.wrap {
+			@include myClampSpaceSp("margin-bottom", 30);
+
+			.txt {
+				width: 100%;
+				@include fsClampSp(14);
+				@include myClampSpaceSp("margin-bottom", 30);
+			}
+			.img {
+				width: 100%;
+			}
+		}
+
+		.zu {
+			width: 100%;
+		}
+	}
+
+	.outline {
+		@include myClampSpaceSp("padding-left", 20);
+		@include myClampSpaceSp("padding-right", 20);
+
+		h2 {
+			@include fsClampSp(20);
+			@include myClampSpaceSp("margin-bottom", 30);
+		}
+
+		.table {
+			table {
+				th,
+				td {
+					@include fsClampSp(12);
+					padding: 2px 15px;
+				}
+				th {
+					@include myClampSpaceSp("width", 100);
+				}
+			}
+		}
+	}
+}
+
+/*-----------------------------------------------------*/
+// works
+/*-----------------------------------------------------*/
+
+.pg.works {
+	.head {
+		@include myClampSpaceSp("padding-top", 50);
+		@include myClampSpaceSp("padding-bottom", 30);
+
+		h1 {
+			@include myClampSpaceSp("width", 173);
+		}
+	}
+
+	.lead {
+		@include myClampSpaceSp("margin-bottom", 30);
+		@include myClampSpaceSp("padding-left", 20);
+		@include myClampSpaceSp("padding-right", 20);
+
+		h2 {
+			@include fsClampSp(20);
+			@include myClampSpaceSp("margin-bottom", 15);
+			text-align: left;
+		}
+
+		p {
+			width: 100%;
+			@include fsClampSp(14);
+		}
+	}
+
+	.image {
+		@include myClampSpaceSp("padding-left", 20);
+		@include myClampSpaceSp("padding-right", 20);
+		@include myClampSpaceSp("margin-bottom", 40);
+
+		.box {
+			width: 100%;
+		}
+	}
+
+	.business {
+		@include myClampSpaceSp("padding-top", 30);
+		@include myClampSpaceSp("padding-left", 20);
+		@include myClampSpaceSp("padding-right", 20);
+		background: linear-gradient(0deg, rgba(118, 197, 171, 0.2) 0%, rgba(39, 185, 237, 0.2) 100%);
+
+		h2 {
+			@include fsClampSp(20);
+			@include myClampSpaceSp("margin-bottom", 30);
+		}
+
+		.box {
+			background: none;
+			padding-top: 0;
+			padding-left: 0;
+			padding-right: 0;
+
+			ul {
+				li {
+					@include myClampSpaceSp("padding-bottom", 50);
+
+					.txt {
+						width: 100%;
+						@include myClampSpaceSp("padding-bottom", 20);
+
+						h3 {
+							@include myClampSpaceSp("margin-bottom", 20);
+
+							span {
+								margin-bottom: 3px;
+								@include fsClampSp(16);
+								background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), #4a73b8;
+								padding: 5px 15px;
+							}
+						}
+
+						p {
+							@include fsClampSp(14);
+						}
+					}
+					.img {
+						width: 100%;
+					}
+				}
+			}
+		}
+	}
+}
+
+/*-----------------------------------------------------*/
+// recruit
+/*-----------------------------------------------------*/
+
+.pg.recruit {
+	.head {
+		@include myClampSpaceSp("padding-top", 30);
+		@include myClampSpaceSp("padding-bottom", 30);
+
+		h1 {
+			@include myClampSpaceSp("width", 180);
+		}
+	}
+
+	.lead {
+		overflow: hidden;
+		@include myClampSpaceSp("margin-bottom", 30);
+		@include myClampSpaceSp("padding-left", 20);
+		@include myClampSpaceSp("padding-right", 20);
+
+		h2 {
+			@include fsClampSp(16);
+			@include myClampSpaceSp("margin-bottom", 20);
+		}
+
+		.img {
+			@include myClampSpaceSp("margin-bottom", 25);
+			@include myClampSpaceSp("margin-left", -20);
+			width: 100vw;
+		}
+
+		.box {
+			.txt {
+				h3 {
+					@include fsClampSp(20);
+					@include myClampSpaceSp("margin-bottom", 25);
+				}
+
+				p {
+					@include fsClampSp(14);
+				}
+			}
+		}
+	}
+
+	.flow {
+		@include myClampSpaceSp("padding-top", 35);
+		@include myClampSpaceSp("padding-bottom", 10);
+		@include myClampSpaceSp("padding-left", 20);
+		@include myClampSpaceSp("padding-right", 20);
+
+		h2 {
+			@include fsClampSp(20);
+			@include myClampSpaceSp("margin-bottom", 20);
+		}
+
+		.list {
+			@include myClampSpaceSp("padding-left", 10);
+			@include myClampSpaceSp("padding-right", 10);
+
+			ul {
+				li {
+					@include myClampSpaceSp("margin-bottom", 65);
+					@include myClampSpaceSp("padding-top", 30);
+					@include myClampSpaceSp("padding-bottom", 30);
+					@include myClampSpaceSp("padding-left", 30);
+					@include myClampSpaceSp("padding-right", 30);
+
+					&::after {
+						bottom: -45px;
+					}
+
+					.img {
+						width: 100%;
+						@include myClampSpaceSp("margin-bottom", 20);
+					}
+					.txt {
+						width: 100%;
+
+						h3 {
+							@include myClampSpaceSp("margin-bottom", 15);
+							text-align: center;
+
+							span {
+								@include myClampSpaceSp("width", 182);
+								@include fsClampSp(20);
+							}
+						}
+
+						p {
+							@include fsClampSp(16);
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.application {
+		@include myClampSpaceSp("padding-top", 30);
+		padding-bottom: 0;
+		@include myClampSpaceSp("padding-left", 20);
+		@include myClampSpaceSp("padding-right", 20);
+
+		h2 {
+			@include fsClampSp(20);
+			@include myClampSpaceSp("margin-bottom", 10);
+		}
+
+		.note {
+			text-align: left;
+			@include fsClampSp(14);
+			@include myClampSpaceSp("margin-bottom", 20);
+		}
+
+		.table {
+			@include myClampSpaceSp("margin-bottom", 30);
+			table {
+				th,
+				td {
+					@include fsClampSp(14);
+				}
+				th {
+					font-weight: 500;
+					background: #f2f2f2;
+					@include myClampSpaceSp("width", 100);
+					padding: 15px 0 15px 15px;
+				}
+				td {
+					padding: 15px 15px;
+				}
+			}
+		}
+
+		.ask {
+			.box {
+				padding: 15px 10px;
+			}
+
+			.wrap {
+				flex-wrap: wrap;
+			}
+
+			h3 {
+				width: 100%;
+				text-align: center;
+				@include fsClampSp(16);
+				@include myClampSpaceSp("margin-bottom", 10);
+			}
+
+			dl {
+				width: 100%;
+				margin-left: 15px;
+				justify-content: flex-start;
+
+				dt {
+					margin-right: 10px;
+					@include myClampSpaceSp("width", 20);
+				}
+				dd {
+					a {
+						@include fsClampSp(18);
+						letter-spacing: 0.05em;
+					}
+				}
+			}
+		}
+	}
+
+	.recruit__entries {
+		display: none;
+	}
+}
+
+/*-----------------------------------------------------*/
+// person
+/*-----------------------------------------------------*/
+
+.pg.person {
+	.head {
+		@include myClampSpaceSp("padding-top", 30);
+		@include myClampSpaceSp("padding-bottom", 40);
+
+		h1 {
+			@include myClampSpaceSp("width", 152);
+		}
+	}
+
+	.tabs {
+		@include myClampSpaceSp("margin-bottom", 50);
+		@include myClampSpaceSp("padding-left", 20);
+		@include myClampSpaceSp("padding-right", 20);
+
+		.list {
+			ul {
+				li {
+					width: 32%;
+
+					.img {
+						@include myClampSpaceSp("margin-bottom", 10);
+					}
+
+					.box {
+						position: static;
+
+						.txt {
+							display: none;
+						}
+						.name {
+							dl {
+								dt {
+									color: $color-key;
+									@include fsClampSp(14);
+									line-height: 1.3;
+									@include myClampSpaceSp("margin-bottom", 5);
+								}
+								dd {
+									color: $color-key;
+									@include fsClampSp(20);
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.interview {
+		@include myClampSpaceSp("padding-left", 20);
+		@include myClampSpaceSp("padding-right", 20);
+		overflow: hidden;
+
+		.visual {
+			@include myClampSpaceSp("margin-bottom", 20);
+			@include myClampSpaceSp("margin-left", -30);
+			width: 105vw;
+		}
+
+		h2 {
+			@include fsClampSp(20);
+			@include myClampSpaceSp("margin-bottom", 30);
+		}
+
+		.name {
+			@include myClampSpaceSp("margin-bottom", 50);
+
+			dl {
+				@include myClampSpaceSp("padding-left", 15);
+				padding-right: 0;
+
+				dt {
+					@include fsClampSp(14);
+					@include myClampSpaceSp("margin-bottom", 7);
+				}
+				dd {
+					@include fsClampSp(14);
+					@include myClampSpaceSp("margin-bottom", 7);
+				}
+			}
+		}
+
+		.box {
+			.txt {
+				width: 100%;
+
+				h3 {
+					@include fsClampSp(16);
+					letter-spacing: 0.05em;
+					@include myClampSpaceSp("margin-bottom", 20);
+				}
+
+				p {
+					@include fsClampSp(14);
+					@include myClampSpaceSp("margin-bottom", 40);
+				}
+
+				.img {
+					@include myClampSpaceSp("margin-bottom", 40);
+					width: 100%;
+				}
+			}
+		}
+
+		.message {
+			@include myClampSpaceSp("margin-bottom", 40);
+			padding: 7px;
+
+			.message__inner {
+				@include myClampSpaceSp("padding-top", 25);
+				@include myClampSpaceSp("padding-bottom", 25);
+
+				h3 {
+					@include fsClampSp(14);
+					@include myClampSpaceSp("margin-bottom", 20);
+				}
+			}
+		}
+	}
+
+	.schedule {
+		@include myClampSpaceSp("padding-left", 40);
+		@include myClampSpaceSp("padding-right", 40);
+		margin-bottom: 0;
+		@include myClampSpaceSp("padding-top", 25);
+		@include myClampSpaceSp("padding-bottom", 30);
+
+		h2 {
+			background: url(../images/schedule.webp) no-repeat center top;
+			background-size: 35px;
+			padding: 40px 0 5px 0;
+			@include fsClampSp(20);
+			margin-left: 0;
+			@include myClampSpaceSp("margin-bottom", 20);
+			text-align: center;
+		}
+
+		ul {
+			li {
+				padding: 20px;
+				@include myClampSpaceSp("margin-bottom", 20);
+
+				&:last-child {
+					display: none;
+				}
+
+				.time {
+					@include fsClampSp(16);
+					line-height: 1.2;
+				}
+				h3 {
+					@include fsClampSp(16);
+					margin-bottom: 5px;
+				}
+				p {
+					@include fsClampSp(13);
+					line-height: 1.8;
+				}
+			}
+		}
+
+		.schedule__slider {
+			.slick-arrow {
+				top: -55px;
+				width: 39px;
+				height: 39px;
+			}
+			.slick-prev {
+				background: url(../images/prev.webp) no-repeat center center;
+				background-size: cover;
+				right: 105px;
+			}
+			.slick-next {
+				background: url(../images/next.webp) no-repeat center center;
+				background-size: cover;
+				right: 50px;
+			}
+
+			.slick-list {
+				padding-left: 50px;
+				box-sizing: border-box;
+			}
+
+			.slick-slide {
+				width: 285px;
+				height: 150px;
+				margin-right: 20px;
+			}
+		}
+	}
+	#kh {
+		.message {
+			.txt {
+				@include myClampSpaceSp("width", 267);
+			}
+		}
+	}
+	#ha {
+		.message {
+			.txt {
+				@include myClampSpaceSp("width", 178);
+			}
+		}
+		h2 {
+			@include myClampSpaceSp("padding-top", 30);
+		}
+	}
+	#ka {
+		.message {
+			.txt {
+				@include myClampSpaceSp("width", 220);
+			}
+		}
+		h2 {
+			@include myClampSpaceSp("padding-top", 30);
+		}
+		.schedule {
+			margin-bottom: 0;
+		}
+	}
+}
