@@ -74,7 +74,7 @@
 					<div class="box__body">
 						<ul>
 							<li>
-								<a href="https://job.mynavi.jp/26/pc/optqqQjvA/info.html?corpId=248206" target="_blank" rel="noopener noreferrer" aria-label="マイナビ2026へ移動">
+								<a href="https://job.mynavi.jp/26/pc/search/corp248206/outline.html" target="_blank" rel="noopener noreferrer" aria-label="マイナビ2026へ移動">
 									<picture>
 										<source srcset="./assets/images/popup_mynavi_2026.webp" media="(min-width:769px)">
 										<img src="./assets/images/popup_mynavi_2026_sp.webp" alt="マイナビ2026">
@@ -165,7 +165,7 @@
 				<div class="entry">
 					<h2><img src="./assets/images/popup_sp_entry.webp" alt="エントリーはこちらから" width="336" height="35"></h2>
 					<ul>
-						<li><a href="https://job.mynavi.jp/26/pc/optqqQjvA/info.html?corpId=248206" target="_blank" rel="noopener noreferrer" aria-label="マイナビ2026へ移動"><img src="./assets/images/mynavi_2026_sp.webp" alt="マイナビ2026"></a></li>
+						<li><a href="https://job.mynavi.jp/26/pc/search/corp248206/outline.html" target="_blank" rel="noopener noreferrer" aria-label="マイナビ2026へ移動"><img src="./assets/images/mynavi_2026_sp.webp" alt="マイナビ2026"></a></li>
 						<li><a href="https://job.rikunabi.com/2026/company/r556672054/" target="_blank" rel="noopener noreferrer" aria-label="リクナビ2026へ移動"><img src="./assets/images/recnavi_2026_sp.webp" alt="リクナビ2026"></a></li>
 						<li><a href="https://job.axol.jp/qd/s/haseko_26/entry/agreement" target="_blank" rel="noopener noreferrer" aria-label="いずれのIDもお持ちでない場合へ移動"><img src="./assets/images/noid_2026_sp.webp" alt="いずれのIDもお持ちでない方"></a></li>
 					</ul>
@@ -463,7 +463,7 @@
 						<div class="entries">
 							<h3>エントリーはこちらから</h3>
 							<ul>
-								<li><a href="https://job.mynavi.jp/26/pc/optqqQjvA/info.html?corpId=248206" target="_blank" rel="noopener noreferrer" aria-label="マイナビ2026へ移動"><img src="./assets/images/banner_mynavi_2026.webp" alt="マイナビ2026" width="293" height="92"></a></li>
+								<li><a href="https://job.mynavi.jp/26/pc/search/corp248206/outline.html" target="_blank" rel="noopener noreferrer" aria-label="マイナビ2026へ移動"><img src="./assets/images/banner_mynavi_2026.webp" alt="マイナビ2026" width="293" height="92"></a></li>
 								<li><a href="https://job.rikunabi.com/2026/company/r556672054/" target="_blank" rel="noopener noreferrer" aria-label="リクナビ2026へ移動"><img src="./assets/images/banner_recnavi_2026.webp" alt="リクナビ2026" width="293" height="92"></a></li>
 								<li><a href="https://job.axol.jp/qd/s/haseko_26/entry/agreement" target="_blank" rel="noopener noreferrer" aria-label="いずれのIDもお持ちでない場合へ移動"><img src="./assets/images/banner_noid_2026.webp" alt="いずれのIDもお持ちでない方" width="293" height="92"></a></li>
 								<li><a href="https://job.mynavi.jp/27/pc/search/corp248206/is.html" target="_blank" rel="noopener noreferrer" aria-label="マイナビ2027へ移動"><img src="./assets/images/banner_mynavi_2027.webp" alt="マイナビ2027" width="293" height="92"></a></li>

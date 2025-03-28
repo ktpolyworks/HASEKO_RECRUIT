@@ -445,7 +445,8 @@ img {
 /*-----------------------------------------------------*/
 
 .main {
-	@include myClampSpace("padding-top", 80);
+	//@include myClampSpace("padding-top", 80);
+	@include myClampSpace("padding-top", 72);
 }
 
 /*-----------------------------------------------------*/
