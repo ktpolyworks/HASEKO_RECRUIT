@@ -32,7 +32,7 @@
 	.popup__inner {
 		width: 100%;
 		height: 100%;
-		@include myClampSpaceSp("padding", 80);
+		padding: 0;
 
 		.popup__bg {
 			width: 100%;
@@ -40,13 +40,13 @@
 		}
 	}
 	.box {
-		@include myClampSpaceSp("width", 1040);
+		width: 80%;
 		filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.25));
 
 		.box__head {
 			h2 {
-				@include fsClampSp(24);
-				padding: 5px 0;
+				@include fsClampSp(16);
+				padding: 13px 0;
 			}
 
 			.popup__close {
@@ -57,8 +57,13 @@
 		}
 		.box__body {
 			ul {
+				flex-wrap: wrap;
+				background: #fff;
+
 				li {
-					margin-bottom: 1px;
+					width: 100%;
+					margin-bottom: 0;
+					border-bottom: 2px solid #ccc;
 				}
 			}
 		}
@@ -76,23 +81,29 @@
 			ul {
 				li {
 					&:nth-child(1) {
-						width: calc(50% - 0.5px);
+						width: 100%;
 					}
 					&:nth-child(2) {
-						width: calc(50% - 0.5px);
+						width: 100%;
 					}
 					&:nth-child(3) {
 						width: 100%;
 					}
 					&:nth-child(4) {
-						width: calc(50% - 0.5px);
+						width: 100%;
 					}
 					&:nth-child(5) {
-						width: calc(50% - 0.5px);
+						width: 100%;
 					}
 					&:nth-child(6) {
 						width: 100%;
 						margin-bottom: 0;
+						border: none;
+					}
+
+					&.ul2027 {
+						border-top: 2px solid #ccc;
+						margin-top: 5px;
 					}
 				}
 			}
@@ -111,10 +122,11 @@
 			ul {
 				li {
 					&:nth-child(1) {
-						width: calc(50% - 0.5px);
+						width: 100%;
 					}
 					&:nth-child(2) {
-						width: calc(50% - 0.5px);
+						width: 100%;
+						border: none;
 					}
 				}
 			}
@@ -364,12 +376,22 @@
 						button {
 							background: url(../images/icon_mypage_w.svg) no-repeat 40px center rgba(#fff, 0.85);
 							background-size: 29px;
+
+							&:hover {
+								background: url(../images/icon_mypage_w.svg) no-repeat 40px center rgba(#fff, 1);
+								background-size: 29px;
+							}
 						}
 					}
 					&:nth-child(2) {
 						button {
 							background: url(../images/icon_entry_w.svg) no-repeat 40px center rgba(#fff, 0.85);
 							background-size: 29px;
+
+							&:hover {
+								background: url(../images/icon_entry_w.svg) no-repeat 40px center rgba(#fff, 1);
+								background-size: 29px;
+							}
 						}
 					}
 				}
@@ -408,7 +430,7 @@
 	}
 
 	.more {
-		a {
+		span {
 			@include fsClampSp(13);
 		}
 	}
@@ -546,10 +568,13 @@
 	.system {
 		background: url(../images/home_system_bg.webp) no-repeat center center;
 		background-size: cover;
-		@include myClampSpaceSp("padding-top", 20);
-		@include myClampSpaceSp("padding-bottom", 30);
-		@include myClampSpaceSp("padding-left", 30);
-		@include myClampSpaceSp("padding-right", 30);
+
+		a {
+			@include myClampSpaceSp("padding-top", 20);
+			@include myClampSpaceSp("padding-bottom", 30);
+			@include myClampSpaceSp("padding-left", 30);
+			@include myClampSpaceSp("padding-right", 30);
+		}
 
 		.lead {
 			@include myClampSpaceSp("margin-bottom", 5);
@@ -689,10 +714,15 @@
 .fbtn {
 	display: block;
 	position: fixed;
-	bottom: 0;
+	bottom: -100px;
 	left: 0;
 	width: 100%;
 	z-index: 1000;
+	transition: bottom 0.3s ease;
+
+	&.show {
+		bottom: 0; // 出す位置
+	}
 
 	button {
 		appearance: none;

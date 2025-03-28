@@ -110,6 +110,12 @@
 					.num {
 						@include fsClampSp(46);
 					}
+
+					span {
+						width: 100%;
+						text-align: center;
+						@include fsClampSp(16);
+					}
 				}
 			}
 		}

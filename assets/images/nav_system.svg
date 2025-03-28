@@ -1,10 +1,10 @@
 <svg id="nav_system" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="80" height="80" viewBox="0 0 80 80">
   <defs>
     <clipPath id="clip-path">
-      <rect id="Rectangle_15" data-name="Rectangle 15" width="80" height="80" transform="translate(2671 -590)" fill="#312bc9" opacity="0.482"/>
+      <rect id="Rectangle_15" data-name="Rectangle 15" width="80" height="80" transform="translate(2671 -363)" fill="#312bc9" opacity="0.482"/>
     </clipPath>
   </defs>
-  <g id="Mask_Group_7" data-name="Mask Group 7" transform="translate(-2671 590)" clip-path="url(#clip-path)">
-    <path id="Polygon_15" data-name="Polygon 15" d="M40,0,79.944,29.021,64.687,75.979H15.313L.056,29.021Z" transform="translate(2670.944 -588)" fill="rgba(255,255,255,0.55)"/>
+  <g id="Mask_Group_14" data-name="Mask Group 14" transform="translate(-2671 363)" clip-path="url(#clip-path)">
+    <path id="Polygon_15" data-name="Polygon 15" d="M40,0,79.944,29.021,64.687,75.979H15.313L.056,29.021Z" transform="translate(2670.944 -361)" fill="#fff"/>
   </g>
 </svg>

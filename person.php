@@ -74,12 +74,54 @@
 					</div>
 					<div class="box__body">
 						<ul>
-							<li><a href="src" target="_blank" rel="noopener noreferrer" aria-label="マイナビ2026へ移動"><img src="./assets/images/popup_mynavi_2026.webp" alt="マイナビ2026" width="520" height="165"></a></li>
-							<li><a href="src" target="_blank" rel="noopener noreferrer" aria-label="リクナビ2026へ移動"><img src="./assets/images/popup_recnavi_2026.webp" alt="リクナビ2026" width="520" height="165"></a></li>
-							<li><a href="src" target="_blank" rel="noopener noreferrer" aria-label="いずれのIDもお持ちでない場合へ移動"><img src="./assets/images/popup_noid_2026.webp" alt="いずれのIDもお持ちでない場合" width="1040" height="115"></a></li>
-							<li><a href="src" target="_blank" rel="noopener noreferrer" aria-label="マイナビ2027へ移動"><img src="./assets/images/popup_mynavi_2027.webp" alt="マイナビ2027" width="520" height="163"></a></li>
-							<li><a href="src" target="_blank" rel="noopener noreferrer" aria-label="リクナビIDをお持ちの方へ移動" class="disabled"><img src="./assets/images/popup_recnavi_preparation.webp" alt="準備中 リクナビIDをお持ちの方" width="520" height="163"></a></li>
-							<li><a href="src" target="_blank" rel="noopener noreferrer" aria-label="準備中" class="disabled"><img src="./assets/images/popup_preparation.webp" alt="準備中（2027年卒）" width="1040" height="116"></a></li>
+							<li>
+								<a href="https://job.mynavi.jp/26/pc/optqqQjvA/info.html?corpId=248206" target="_blank" rel="noopener noreferrer" aria-label="マイナビ2026へ移動">
+									<picture>
+										<source srcset="./assets/images/popup_mynavi_2026.webp" media="(min-width:769px)">
+										<img src="./assets/images/popup_mynavi_2026_sp.webp" alt="マイナビ2026">
+									</picture>
+								</a>
+							</li>
+							<li>
+								<a href="https://job.rikunabi.com/2026/company/r556672054/" target="_blank" rel="noopener noreferrer" aria-label="リクナビ2026へ移動">
+									<picture>
+										<source srcset="./assets/images/popup_recnavi_2026.webp" media="(min-width:769px)">
+										<img src="./assets/images/popup_recnavi_2026_sp.webp" alt="リクナビ2026">
+									</picture>
+								</a>
+							</li>
+							<li>
+								<a href="https://job.axol.jp/qd/s/haseko_26/entry/agreement" target="_blank" rel="noopener noreferrer" aria-label="いずれのIDもお持ちでない場合へ移動">
+									<picture>
+										<source srcset="./assets/images/popup_noid_2026.webp" media="(min-width:769px)">
+										<img src="./assets/images/popup_noid_2026_sp.webp" alt="いずれのIDもお持ちでない場合">
+									</picture>
+								</a>
+							</li>
+							<li class="ul2027">
+								<a href="https://job.mynavi.jp/27/pc/search/corp248206/is.html" target="_blank" rel="noopener noreferrer" aria-label="マイナビ2027へ移動">
+									<picture>
+										<source srcset="./assets/images/popup_mynavi_2027.webp" media="(min-width:769px)">
+										<img src="./assets/images/popup_mynavi_2027_sp.webp" alt="マイナビ2027">
+									</picture>
+								</a>
+							</li>
+							<li>
+								<a href="#" target="_blank" rel="noopener noreferrer" aria-label="リクナビIDをお持ちの方へ移動" class="disabled">
+									<picture>
+										<source srcset="./assets/images/popup_recnavi_preparation.webp" media="(min-width:769px)">
+										<img src="./assets/images/popup_recnavi_preparation_sp.webp" alt="準備中 リクナビIDをお持ちの方">
+									</picture>
+								</a>
+							</li>
+							<li>
+								<a href="#" target="_blank" rel="noopener noreferrer" aria-label="準備中" class="disabled">
+									<picture>
+										<source srcset="./assets/images/popup_preparation.webp" media="(min-width:769px)">
+										<img src="./assets/images/popup_preparation_sp.webp" alt="準備中（2027年卒）">
+									</picture>
+								</a>
+							</li>
 						</ul>
 					</div>
 				</div>
@@ -96,8 +138,22 @@
 					</div>
 					<div class="box__body">
 						<ul>
-							<li><a href="src" target="_blank" rel="noopener noreferrer" aria-label="2026年卒マイページにログインする"><img src="./assets/images/popup_mypage_2026.webp" alt="2026年卒向けマイページ" width="520" height="133"></a></li>
-							<li><a href="src" target="_blank" rel="noopener noreferrer" aria-label="2027年卒マイページにログインする" class="disabled"><img src="./assets/images/popup_mypage_2027.webp" alt="2027年卒向けマイページ" width="520" height="133"></a></li>
+							<li>
+								<a href="https://job.axol.jp/qd/s/haseko_26/mypage/login" target="_blank" rel="noopener noreferrer" aria-label="2026年卒マイページにログインする">
+									<picture>
+										<source srcset="./assets/images/popup_mypage_2026.webp" media="(min-width:769px)">
+										<img src="./assets/images/popup_mypage_2026_sp.webp" alt="2026年卒向けマイページ">
+									</picture>
+								</a>
+							</li>
+							<li>
+								<a href="#" target="_blank" rel="noopener noreferrer" aria-label="2027年卒マイページにログインする" class="disabled">
+									<picture>
+										<source srcset="./assets/images/popup_mypage_2027.webp" media="(min-width:769px)">
+										<img src="./assets/images/popup_mypage_2027_sp.webp" alt="2027年卒向けマイページ">
+									</picture>
+								</a>
+							</li>
 						</ul>
 					</div>
 				</div>
@@ -110,12 +166,12 @@
 				<div class="entry">
 					<h2><img src="./assets/images/popup_sp_entry.webp" alt="エントリーはこちらから" width="336" height="35"></h2>
 					<ul>
-						<li><a href="" target="_blank" rel="noopener noreferrer" aria-label="マイナビ2026へ移動"><img src="./assets/images/mynavi_2026_sp.webp" alt="マイナビ2026"></a></li>
-						<li><a href="" target="_blank" rel="noopener noreferrer" aria-label="リクナビ2026へ移動"><img src="./assets/images/recnavi_2026_sp.webp" alt="リクナビ2026"></a></li>
-						<li><a href="" target="_blank" rel="noopener noreferrer" aria-label="いずれのIDもお持ちでない場合へ移動"><img src="./assets/images/noid_2026_sp.webp" alt="いずれのIDもお持ちでない方"></a></li>
+						<li><a href="https://job.mynavi.jp/26/pc/optqqQjvA/info.html?corpId=248206" target="_blank" rel="noopener noreferrer" aria-label="マイナビ2026へ移動"><img src="./assets/images/mynavi_2026_sp.webp" alt="マイナビ2026"></a></li>
+						<li><a href="https://job.rikunabi.com/2026/company/r556672054/" target="_blank" rel="noopener noreferrer" aria-label="リクナビ2026へ移動"><img src="./assets/images/recnavi_2026_sp.webp" alt="リクナビ2026"></a></li>
+						<li><a href="https://job.axol.jp/qd/s/haseko_26/entry/agreement" target="_blank" rel="noopener noreferrer" aria-label="いずれのIDもお持ちでない場合へ移動"><img src="./assets/images/noid_2026_sp.webp" alt="いずれのIDもお持ちでない方"></a></li>
 					</ul>
 					<ul>
-						<li><a href="" target="_blank" rel="noopener noreferrer" aria-label="マイナビ2027へ移動"><img src="./assets/images/mynavi_2027_sp.webp" alt="マイナビ2027"></a></li>
+						<li><a href="https://job.mynavi.jp/27/pc/search/corp248206/is.html" target="_blank" rel="noopener noreferrer" aria-label="マイナビ2027へ移動"><img src="./assets/images/mynavi_2027_sp.webp" alt="マイナビ2027"></a></li>
 						<li><img src="./assets/images/recnavi_2027_sp.webp" alt="リクナビ2027"></li>
 						<li><img src="./assets/images/preparation_sp.webp" alt="準備中（2027年卒）"></li>
 					</ul>
@@ -127,7 +183,7 @@
 						マイページから受け付けています。
 					</p>
 					<ul>
-						<li><a href="" target="_blank" rel="noopener noreferrer" aria-label="2026年卒マイページにログインする"><img src="./assets/images/mypage_sp_2026.webp" alt="マイページにログイン（2026年卒）"></a></li>
+						<li><a href="https://job.axol.jp/qd/s/haseko_26/mypage/login" target="_blank" rel="noopener noreferrer" aria-label="2026年卒マイページにログインする"><img src="./assets/images/mypage_sp_2026.webp" alt="マイページにログイン（2026年卒）"></a></li>
 						<li><img src="./assets/images/mypage_sp_2027.webp" alt="マイページ準備中（2027年卒）"></li>
 					</ul>
 				</div>
@@ -144,10 +200,12 @@
 		<nav class="nav" id="nav">
 			<div class="nav__inner">
 				<div class="logo">
-					<picture>
-						<source srcset="./assets/images/nav_logo.webp" media="(min-width:769px)">
-						<img src="./assets/images/logo_sp.webp" alt="長谷工コミュニティ九州 RECRUITING SITE">
-					</picture>
+					<a href="./" aria-label="トップへ移動">
+						<picture>
+							<source srcset="./assets/images/nav_logo.webp" media="(min-width:769px)">
+							<img src="./assets/images/logo_sp.webp" alt="長谷工コミュニティ九州 RECRUITING SITE">
+						</picture>
+					</a>
 				</div>
 				<div class="box">
 					<div class="list" id="nav__list">
@@ -168,7 +226,7 @@
 							<li>
 								<a href="./works.php" aria-label="仕事を知るページへ移動">
 									<dl>
-										<dt><img src="./assets/images/nav_person.svg" alt="仕事を知る" width="80" height="80"></dt>
+										<dt><img src="./assets/images/nav_works.svg" alt="仕事を知る" width="80" height="80"></dt>
 										<dd>仕事を知る</dd>
 									</dl>
 								</a>
@@ -231,7 +289,7 @@
 			</div>
 		</nav>
 		
-		<main class="main">
+		<main class="main fade">
 			
 			<div class="pg person" id="person">
 				
@@ -248,7 +306,12 @@
 							<ul>
 								<li>
 									<a href="#kh" aria-label="フロント営業／2022年入社K.Hのインタビューへ移動">
-										<div class="img"><img src="./assets/images/kh.webp" alt="フロント営業／2022年入社K.H" width="234" height="344"></div>
+										<div class="img">
+											<picture>
+												<source srcset="./assets/images/kh.webp" media="(min-width:769px)">
+												<img src="./assets/images/kh_sp.webp" alt="フロント営業／2022年入社K.H">
+											</picture>
+										</div>
 										<div class="box">
 											<div class="txt">知識と経験を積んで<br>頼られるフロントヘ。</div>
 											<div class="name">
@@ -262,7 +325,12 @@
 								</li>
 								<li>
 									<a href="#ha" aria-label="フロント営業／2023年入社H.Aのインタビューへ移動">
-										<div class="img"><img src="./assets/images/ha.webp" alt="フロント営業／2023年入社H.A" width="234" height="344"></div>
+										<div class="img">
+											<picture>
+												<source srcset="./assets/images/ha.webp" media="(min-width:769px)">
+												<img src="./assets/images/ha_sp.webp" alt="フロント営業／2023年入社H.A">
+											</picture>
+										</div>
 										<div class="box">
 											<div class="txt">居住者様の気持ちに<br>寄り添い安全安心な<br>マンションライフを<br>提案する。</div>
 											<div class="name">
@@ -276,7 +344,12 @@
 								</li>
 								<li>
 									<a href="#ka" aria-label="執行役員／2008年入社K.Aのインタビューへ移動">
-										<div class="img"><img src="./assets/images/ka.webp" alt="執行役員／2008年入社K.A" width="234" height="344"></div>
+										<div class="img">
+											<picture>
+												<source srcset="./assets/images/ka.webp" media="(min-width:769px)">
+												<img src="./assets/images/ka_sp.webp" alt="執行役員／2008年入社K.A">
+											</picture>
+										</div>
 										<div class="box">
 											<div class="txt">お客様からの感謝と<br>信頼が大きなやりがい<br>につながる。</div>
 											<div class="name">
@@ -313,7 +386,7 @@
 								</dl>
 							</div>
 							<div class="box">
-								<div class="img pc"><img src="./assets/images/kh_1.webp" alt="" width="504" height="341"></div>
+								<div class="img pc"><img src="./assets/images/kh_1.webp" alt="" width="504" height="341" class="movpic"></div>
 								<div class="txt">
 									<h3>
 										「何でもやります！」<br>
@@ -329,7 +402,7 @@
 								</div>
 							</div>
 							<div class="box box__r">
-								<div class="img pc"><img src="./assets/images/kh_2.webp" alt="" width="504" height="380"></div>
+								<div class="img pc"><img src="./assets/images/kh_2.webp" alt="" width="504" height="380" class="movpic"></div>
 								<div class="txt">
 									<h3>
 										尊敬する上司の存在が<br>
@@ -400,7 +473,7 @@
 					</div>
 				</section>
 				
-				<section class="content" id="ha">
+				<section class="content fdae" id="ha">
 					<div class="interview">
 						<div class="inner">
 							<h2 class="sp">
@@ -426,9 +499,9 @@
 								</dl>
 							</div>
 							<div class="box">
-								<div class="img pc"><img src="./assets/images/ha_1.webp" alt="" width="504" height="380"></div>
+								<div class="img pc"><img src="./assets/images/ha_1.webp" alt="" width="504" height="380" class="movpic"></div>
 								<div class="txt">
-									<h3>自信を持って安心安全を<br class="sp">提供できる仕事。</h3>
+									<h3>自信を持って安全安心を<br>提供できる仕事。</h3>
 									<p>就活の時までマンション管理業界のことを全く知りませんでした。合同企業説明会の際に当社の説明を聞いたことがきっかけです。マンション管理は居住者様の生活と気持ちに寄り添った提案を行うということ以外に、長谷工の物件は阪神淡路大震災の時にほぼ倒れなかったという話を聞き、安全安心な住環境を自信を持って提供できる仕事だと思い当社を目指しました。他にもマンションのコミュニティづくりでお祭りなどのイベント提案をしているのも楽しそうと感じました。大学時代、文化祭の実行委員をするなどイベント好きなので、そういうところにも興味がありました。</p>
 									<div class="img sp"><img src="./assets/images/ha_1.webp" alt="" width="504" height="380"></div>
 									<h3>
@@ -439,7 +512,7 @@
 								</div>
 							</div>
 							<div class="box box__r">
-								<div class="img pc"><img src="./assets/images/ha_2.webp" alt="" width="504" height="345"></div>
+								<div class="img pc"><img src="./assets/images/ha_2.webp" alt="" width="504" height="345" class="movpic"></div>
 								<div class="txt">
 									<h3>
 										「あなたなら安心して任せられる」と<br>
@@ -500,7 +573,7 @@
 					</div>
 				</section>
 				
-				<section class="content" id="ka">
+				<section class="content fade" id="ka">
 					<div class="interview">
 						<div class="inner">
 							<h2 class="sp">
@@ -523,7 +596,7 @@
 								</dl>
 							</div>
 							<div class="box">
-								<div class="img pc"><img src="./assets/images/ka_1.webp" alt="" width="504" height="380"></div>
+								<div class="img pc"><img src="./assets/images/ka_1.webp" alt="" width="504" height="380" class="movpic"></div>
 								<div class="txt">
 									<h3>
 										マンション運営の<br class="pc">中核を<br class="sp">担う重要な仕事。
@@ -538,7 +611,7 @@
 								</div>
 							</div>
 							<div class="box box__r">
-								<div class="img pc"><img src="./assets/images/ka_2.webp" alt="" width="504" height="380"></div>
+								<div class="img pc"><img src="./assets/images/ka_2.webp" alt="" width="504" height="380" class="movpic"></div>
 								<div class="txt">
 									<h3>
 										話しやすく、<br>
@@ -665,10 +738,10 @@
 				<div class="entries">
 					<h3>エントリーはこちらから</h3>
 					<ul>
-						<li><a href="" target="_blank" rel="noopener noreferrer" aria-label="マイナビ2026へ移動"><img src="./assets/images/banner_mynavi_2026.webp" alt="マイナビ2026" width="293" height="92"></a></li>
-						<li><a href="" target="_blank" rel="noopener noreferrer" aria-label="リクナビ2026へ移動"><img src="./assets/images/banner_recnavi_2026.webp" alt="リクナビ2026" width="293" height="92"></a></li>
-						<li><a href="" target="_blank" rel="noopener noreferrer" aria-label="いずれのIDもお持ちでない場合へ移動"><img src="./assets/images/banner_noid_2026.webp" alt="いずれのIDもお持ちでない方" width="293" height="92"></a></li>
-						<li><a href="" target="_blank" rel="noopener noreferrer" aria-label="マイナビ2027へ移動"><img src="./assets/images/banner_mynavi_2027.webp" alt="マイナビ2027" width="293" height="92"></a></li>
+						<li><a href="https://job.mynavi.jp/26/pc/optqqQjvA/info.html?corpId=248206" target="_blank" rel="noopener noreferrer" aria-label="マイナビ2026へ移動"><img src="./assets/images/banner_mynavi_2026.webp" alt="マイナビ2026" width="293" height="92"></a></li>
+						<li><a href="https://job.rikunabi.com/2026/company/r556672054/" target="_blank" rel="noopener noreferrer" aria-label="リクナビ2026へ移動"><img src="./assets/images/banner_recnavi_2026.webp" alt="リクナビ2026" width="293" height="92"></a></li>
+						<li><a href="https://job.axol.jp/qd/s/haseko_26/entry/agreement" target="_blank" rel="noopener noreferrer" aria-label="いずれのIDもお持ちでない場合へ移動"><img src="./assets/images/banner_noid_2026.webp" alt="いずれのIDもお持ちでない方" width="293" height="92"></a></li>
+						<li><a href="https://job.mynavi.jp/27/pc/search/corp248206/is.html" target="_blank" rel="noopener noreferrer" aria-label="マイナビ2027へ移動"><img src="./assets/images/banner_mynavi_2027.webp" alt="マイナビ2027" width="293" height="92"></a></li>
 						<li><img src="./assets/images/banner_recnavi_preparation.webp" alt="準備中 リクナビIDをお持ちの方" width="293" height="92"></li>
 						<li><img src="./assets/images/banner_preparation.webp" alt="準備中（2027年卒）" width="293" height="92"></li>
 					</ul>
@@ -677,15 +750,15 @@
 					<h3>マイページはこちらから</h3>
 					<p>会社説明会の予約は、マイページから受け付けています。</p>
 					<ul>
-						<li><a href="" target="_blank" rel="noopener noreferrer" aria-label="2026年卒マイページにログインする"><span>マイページにログイン（2026年卒）</span></a></li>
-						<li><a href="" target="_blank" rel="noopener noreferrer" aria-label="2027年卒マイページにログインする" class="disabled"><span>マイページ準備中（2027年卒）</span></a></li>
+						<li><a href="https://job.axol.jp/qd/s/haseko_26/mypage/login" target="_blank" rel="noopener noreferrer" aria-label="2026年卒マイページにログインする"><span>マイページにログイン（2026年卒）</span></a></li>
+						<li><a href="#" target="_blank" rel="noopener noreferrer" aria-label="2027年卒マイページにログインする" class="disabled"><span>マイページ準備中（2027年卒）</span></a></li>
 					</ul>
 				</div>
 				<div class="btns">
 					<ul>
-						<li><a href="" target="_blank" rel="noopener noreferrer" aria-label="コーポレートサイトへ移動">コーポレートサイト</a></li>
-						<li><a href="" target="_blank" rel="noopener noreferrer" aria-label="個人情報保護方針へ移動">個人情報保護方針</a></li>
-						<li><a href="" target="_blank" rel="noopener noreferrer" aria-label="お問い合わせ窓口へ移動">お問い合わせ窓口</a></li>
+						<li><a href="https://www.haseko.co.jp/cmq/" target="_blank" rel="noopener noreferrer" aria-label="コーポレートサイトへ移動">コーポレートサイト</a></li>
+						<li><a href="https://www.haseko.co.jp/cmq/company/privacy" target="_blank" rel="noopener noreferrer" aria-label="個人情報保護方針へ移動">個人情報保護方針</a></li>
+						<li><a href="https://www.haseko.co.jp/cmq/contact" target="_blank" rel="noopener noreferrer" aria-label="お問い合わせ窓口へ移動">お問い合わせ窓口</a></li>
 					</ul>
 				</div>
 				<div class="copy">Copyright&copy; <a href="//www.haseko.co.jp/cmq/" target="_blank" rel="noopener noreferrer" aria-label="長谷工コミュニティ九州のウェブサイトへ移動">HASEKO COMMUNITY KYUSHU</a>. All rights reserved.</div>
@@ -696,10 +769,14 @@
 		<div class="fbtn">
 			<button><img src="./assets/images/f_btn.webp" alt="ENTRY&MYPAGE"></button>
 		</div>
+		
+		<div class="fbtn">
+			<button><img src="./assets/images/f_btn.webp" alt="ENTRY&MYPAGE"></button>
+		</div>
 				
-		<script src="//ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-		<script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-		<script src="./assets/js/script.js?<?= time() ?>"></script>
+		<script defer src="//ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<script defer src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+		<script defer src="./assets/js/script.js?<?= time() ?>"></script>
 		
 	</body>
 </html>

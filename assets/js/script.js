@@ -1,5 +1,18 @@
 jQuery(function () {
-	var _h = window.innerHeight ? window.innerHeight : $(window).height()
+	/* opening
+	------------------------------------------------------------*/
+
+	setTimeout(function () {
+		$("#open .box").fadeIn(500)
+	}, 1000)
+
+	setTimeout(function () {
+		$("#home").css("visibility", "visible")
+		$("#open").fadeOut(1000)
+	}, 3000)
+
+	// $("#home").css("visibility", "visible")
+	// $("#open").fadeOut(1000)
 
 	/* scroll
 	------------------------------------------------------------*/
@@ -96,6 +109,24 @@ jQuery(function () {
 				$(this).addClass("fade__on")
 			}
 		})
+		$(".works__image__fade").each(function () {
+			var position = $(this).offset().top
+			var scroll = $(window).scrollTop()
+			var windowHeight = $(window).height()
+			if (window.matchMedia("(max-width:768px)").matches) {
+				// for sp
+				var _pos = 200
+			} else {
+				// for pc
+				var _pos = 300
+			}
+			if (scroll > position - windowHeight + _pos) {
+				$(".works__image__fade .box__1").addClass("on")
+				setTimeout(function () {
+					$(".works__image__fade .box__2").addClass("on")
+				}, 1000)
+			}
+		})
 	}
 
 	/* radioボタンの再選択で解除する処理
@@ -146,6 +177,7 @@ jQuery(function () {
 		$("#nav__list>ul>li>a").on("click", function (e) {
 			e.preventDefault()
 			$(this).siblings("ul").stop(true, true).slideToggle()
+			$(this).toggleClass("on")
 		})
 		$("#nav__list>ul>li>ul>li>a").on("click", function () {
 			isMenuActive = !isMenuActive
@@ -166,6 +198,263 @@ jQuery(function () {
 	$("#closebtn").on("click", function () {
 		$("#popup__sp").fadeOut()
 	})
+
+	/* nav
+	------------------------------------------------------------*/
+
+	$("#nav__list>ul>li>ul>li>a").hover(
+		function () {
+			const $dt = $(this).closest("ul").parent("li").children("a").find("dt")
+
+			$dt.addClass("on")
+		},
+		function () {
+			const $dt = $(this).closest("ul").parent("li").children("a").find("dt")
+			$dt.removeClass("on")
+		}
+	)
+
+	/* indexの採用を知るのボタン
+	------------------------------------------------------------*/
+
+	$("#open__entry").on("click", function () {
+		$("#popup__entry").fadeIn()
+	})
+	$("#open__mypage").on("click", function () {
+		$("#popup__mypage").fadeIn()
+	})
+
+	$("#btn__recruit__entry").on("click", function () {
+		$("#popup__entry").fadeIn()
+	})
+
+	/* system
+	------------------------------------------------------------*/
+
+	// num1
+	$({ countNum: 99 }).animate(
+		{ countNum: 0 },
+		{
+			duration: 3000, // 3秒
+			easing: "easeOutExpo",
+			step: function () {
+				$("#num1").text(Math.floor(this.countNum))
+			},
+			complete: function () {
+				$("#num1").text(this.countNum) // 最後にピッタリ合わせる
+			},
+		}
+	)
+
+	// num2
+	$({ countNum: 0 }).animate(
+		{ countNum: 9.3 },
+		{
+			duration: 3000, // 3秒
+			easing: "easeOutExpo",
+			step: function () {
+				$("#num2").text(Math.floor(this.countNum))
+			},
+			complete: function () {
+				$("#num2").text(this.countNum) // 最後にピッタリ合わせる
+			},
+		}
+	)
+
+	// num3_1
+	$({ countNum: 0 }).animate(
+		{ countNum: 67 },
+		{
+			duration: 3000, // 3秒
+			easing: "easeOutExpo",
+			step: function () {
+				$("#num3__1").text(Math.floor(this.countNum))
+			},
+			complete: function () {
+				$("#num3__1").text(this.countNum) // 最後にピッタリ合わせる
+			},
+		}
+	)
+
+	// num3_2
+	$({ countNum: 0 }).animate(
+		{ countNum: 33 },
+		{
+			duration: 3000, // 3秒
+			easing: "easeOutExpo",
+			step: function () {
+				$("#num3__2").text(Math.floor(this.countNum))
+			},
+			complete: function () {
+				$("#num3__2").text(this.countNum) // 最後にピッタリ合わせる
+			},
+		}
+	)
+
+	// num4
+	$({ countNum: 0 }).animate(
+		{ countNum: 33 },
+		{
+			duration: 3000, // 3秒
+			easing: "easeOutExpo",
+			step: function () {
+				$("#num4").text(Math.floor(this.countNum))
+			},
+			complete: function () {
+				$("#num4").text(this.countNum) // 最後にピッタリ合わせる
+			},
+		}
+	)
+
+	// num5
+	$({ countNum: 0 }).animate(
+		{ countNum: 120 },
+		{
+			duration: 3000, // 3秒
+			easing: "easeOutExpo",
+			step: function () {
+				$("#num5").text(Math.floor(this.countNum))
+			},
+			complete: function () {
+				$("#num5").text(this.countNum) // 最後にピッタリ合わせる
+			},
+		}
+	)
+
+	// num6
+	$({ countNum: 0 }).animate(
+		{ countNum: 13.9 },
+		{
+			duration: 3000, // 3秒
+			easing: "easeOutExpo",
+			step: function () {
+				$("#num6").text(Math.floor(this.countNum))
+			},
+			complete: function () {
+				$("#num6").text(this.countNum) // 最後にピッタリ合わせる
+			},
+		}
+	)
+
+	// num8
+	$({ countNum: 0 }).animate(
+		{ countNum: 95 },
+		{
+			duration: 3000, // 3秒
+			easing: "easeOutExpo",
+			step: function () {
+				$("#num8").text(Math.floor(this.countNum))
+			},
+			complete: function () {
+				$("#num8").text(this.countNum) // 最後にピッタリ合わせる
+			},
+		}
+	)
+
+	/* fbtn
+	------------------------------------------------------------*/
+
+	let scrollTimer = null
+
+	$(window).on("scroll", function () {
+		$(".fbtn").removeClass("show")
+		if (scrollTimer !== null) {
+			clearTimeout(scrollTimer)
+		}
+		scrollTimer = setTimeout(function () {
+			$(".fbtn").addClass("show")
+		}, 200)
+	})
+
+	/* topback
+	------------------------------------------------------------*/
+
+	$(window).scroll(function () {
+		if ($(this).scrollTop() > 100) {
+			$("#topback").fadeIn()
+		} else {
+			$("#topback").fadeOut()
+		}
+	})
+
+	/* top
+	------------------------------------------------------------*/
+
+	if ($("#index").length) {
+		$("#visual__l").vegas({
+			slides: [
+				{ src: "assets/images/visual_1_1.webp" },
+				{ src: "assets/images/visual_2_1.webp" },
+				{ src: "assets/images/visual_3_1.webp" },
+			],
+			transition: "fade",
+			transitionDuration: 3000,
+			animation: "random",
+			delay: 8000,
+			timer: false,
+		})
+		$("#visual__r1").vegas({
+			slides: [
+				{ src: "assets/images/visual_1_2.webp" },
+				{ src: "assets/images/visual_2_2.webp" },
+				{ src: "assets/images/visual_3_2.webp" },
+			],
+			transition: "fade",
+			transitionDuration: 3000,
+			animation: "random",
+			delay: 8000,
+			timer: false,
+		})
+		$("#visual__r2").vegas({
+			slides: [
+				{ src: "assets/images/visual_1_3.webp" },
+				{ src: "assets/images/visual_2_3.webp" },
+				{ src: "assets/images/visual_3_3.webp" },
+			],
+			transition: "fade",
+			transitionDuration: 3000,
+			animation: "random",
+			delay: 8000,
+			timer: false,
+		})
+
+		$("#visual__l__sp").vegas({
+			slides: [
+				{ src: "assets/images/visual_1_1_sp.webp" },
+				{ src: "assets/images/visual_2_1_sp.webp" },
+				{ src: "assets/images/visual_3_1_sp.webp" },
+			],
+			transition: "fade",
+			transitionDuration: 3000,
+			animation: "random",
+			delay: 8000,
+			timer: false,
+		})
+		$("#visual__r1__sp").vegas({
+			slides: [
+				{ src: "assets/images/visual_1_2_sp.webp" },
+				{ src: "assets/images/visual_2_2_sp.webp" },
+				{ src: "assets/images/visual_3_2_sp.webp" },
+			],
+			transition: "fade",
+			transitionDuration: 3000,
+			animation: "random",
+			delay: 8000,
+			timer: false,
+		})
+		$("#visual__r2__sp").vegas({
+			slides: [
+				{ src: "assets/images/visual_1_3_sp.webp" },
+				{ src: "assets/images/visual_2_3_sp.webp" },
+				{ src: "assets/images/visual_3_3_sp.webp" },
+			],
+			transition: "fade",
+			transitionDuration: 3000,
+			animation: "random",
+			delay: 8000,
+			timer: false,
+		})
+	}
 })
 
 /* easing
